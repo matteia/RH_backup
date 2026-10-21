@@ -1,0 +1,859 @@
+% Source - https://tex.stackexchange.com/a/630315
+% Posted by Mico, modified by community. See post 'Timeline' for change history
+% Retrieved 2026-10-02, License - CC BY-SA 4.0
+
+\documentclass{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\newtheorem{theorem}[subsection]{Theorem}
+
+\title[RH Euclidean Cartesian]{Proving the Riemann Hypothesis \\
+	with Euclidean Distance, Cartesian Coordinates and Series Divergence}
+\author{Zinoo Park}
+\date{20261004}
+
+\begin{document}
+	
+	ZETA
+	
+	$\zeta(s)$
+	\[ \zeta(s) \]
+	
+	RIEMANN ZETA
+	
+	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \frac{1}{5^s} + {\dots} + \frac{1}{k^s} \]
+	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \frac{1}{5^s} + {\dots} + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{1}{k^s} \]
+	
+	
+	DIRICHLET ETA
+	
+	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \frac{1}{5^s} - ... + \frac{1}{k^s} \]
+	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \frac{1}{5^s} - ... + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \]
+	
+	NUMBER SETS
+	\[ \mathbb{N}, \mathbb{R}, \mathbb{C}, \mathbb{Z} \]
+	\[ k \in \mathbb{N} \]
+	
+	DDDDDDDD bar D
+	\[ D = 1-2^{1-s} \]
+	\[ D_{s} = 1-2^{1-s} \]
+	\[ D_{\frac{2}{b}} = 1-2^{1-\frac{2}{b}} \]
+	
+	\[ D = 1-2^{1-s} = v + wi \]
+	\[ D_{s} = 1-2^{1-s} = v + wi \]
+	
+	\[ \bar{D} = 1-2^{1-s} = v - wi \]
+	\[ \bar{D_{s}} = 1-2^{1-s} = v - wi \]
+	
+	\[ v^2 + w^2 \neq 0 \]
+	\[ v^2 {+} w^2 \neq 0 \]
+	
+	\[ v^2 + w^2 > 0 \]
+	\[ v^2 {+} w^2 > 0 \]
+	
+	
+	\newpage
+	
+	X Y Z -----------
+	\[ \zeta(s) \qquad = \qquad \frac{1}{1^s} \qquad \Big|  \qquad \frac{\cos({c\ln 1})}{\sqrt[b]{1}} \qquad \frac{-\sin({c\ln 1})}{\sqrt[b]{1}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad \frac{1}{2^s} \qquad \Big|  \qquad \frac{\cos({c\ln 2})}{\sqrt[b]{2}} \qquad \frac{-\sin({c\ln 2})}{\sqrt[b]{2}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad \frac{1}{3^s} \qquad \Big|  \qquad \frac{\cos({c\ln 3})}{\sqrt[b]{3}} \qquad \frac{-\sin({c\ln 3})}{\sqrt[b]{3}} \quad i  \]
+	
+	\[ \vdots \]
+	
+	\[ \qquad \qquad \quad + \quad \frac{1}{k^s} \qquad \Big|  \qquad \frac{\cos({c\ln k})}{\sqrt[b]{k}} \qquad \frac{-\sin({c\ln k})}{\sqrt[b]{k}} \quad i  \]
+	
+	\[\quad \rule{12 cm}{.8pt} \quad \]
+	\[ \qquad \qquad \qquad z \qquad\qquad =  \qquad\qquad X \qquad + \qquad Y \quad i \qquad\qquad \]
+	
+	\[ \text{or} \]
+	\[ z (X, Y) \]
+	
+	-----------
+	
+	\[ \zeta(s) \qquad = \qquad \frac{1}{1^s} \qquad \Big|  \qquad \frac{\cos({c\ln 1})}{\sqrt[b]{1}} \qquad \frac{-\sin({c\ln 1})}{\sqrt[b]{1}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad \frac{1}{2^s} \qquad \Big|  \qquad \frac{\cos({c\ln 2})}{\sqrt[b]{2}} \qquad \frac{-\sin({c\ln 2})}{\sqrt[b]{2}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad \frac{1}{3^s} \qquad \Big|  \qquad \frac{\cos({c\ln 3})}{\sqrt[b]{3}} \qquad \frac{-\sin({c\ln 3})}{\sqrt[b]{3}} \quad i  \]
+	
+	\[ \vdots \]
+	
+	\[ \qquad \qquad \quad + \quad \frac{1}{k^s} \qquad \Big|  \qquad \frac{\cos({c\ln k})}{\sqrt[b]{k}} \qquad \frac{-\sin({c\ln k})}{\sqrt[b]{k}} \quad i  \]
+	
+	\[\quad \rule{12 cm}{.8pt} \quad \]
+	\[ \qquad \qquad \qquad z \qquad\qquad =  \qquad\qquad X \qquad + \qquad Y \quad i \qquad\qquad \]
+	
+	\[ \text{or} \]
+	\[ z (X, Y) \]
+	
+	\[ x_k = \frac{\cos({c\ln k})}{\sqrt[b]{k}} \]
+	\[ x_k = \frac{\cos({c\ln k})}{\sqrt[b]{k}} = \frac{\cos(-{c\ln k})}{\sqrt[b]{k}} \]
+	\[ x_k = \frac{\cos({c\ln k})}{\sqrt[b]{k}} = \frac{\cos(-{c\ln k})}{\sqrt[b]{k}} = \frac{\cos({c\ln k^{-1}})}{\sqrt[b]{k}} \]
+	\[ x_k = \frac{\cos({c\ln k})}{\sqrt[b]{k}} = \frac{\cos(-{c\ln k})}{\sqrt[b]{k}} = \frac{\cos({c\ln k^{-1}})}{\sqrt[b]{k}} = \frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
+	
+	
+	\[ y_k = \frac{-\sin({c\ln k})}{\sqrt[b]{k}} \]
+	\[ y_k = \frac{-\sin({c\ln k})}{\sqrt[b]{k}} = \frac{\sin({-c\ln k})}{\sqrt[b]{k}} = \frac{\sin({c\ln (k)^{-1}})}{\sqrt[b]{k}} \]
+	\[ y_k = \frac{-\sin({c\ln k})}{\sqrt[b]{k}} = \frac{\sin({-c\ln k})}{\sqrt[b]{k}} = \frac{\sin({c\ln k^{-1}})}{\sqrt[b]{k}} = \frac{\sin({c\ln \frac1k })}{\sqrt[b]{k}} \]
+	
+	\[ \Re(\zeta(s)) = X \]
+	\[ \Im(\zeta(s)) = Y \]
+	\[ Re(\zeta(s)) = X \]
+	\[ Im(\zeta(s)) = Y \]
+	
+	\[ X = \sum\limits_{k=1}^{\infty}x^k \]
+	\[ Y = \sum\limits_{k=1}^{\infty}y^k \]
+	
+	
+	\[ z(X,Y) \]
+	\[ Z(vX-wY, wX+vY) \]
+	\[ Z(vX-wY, \, wX+vY) \]
+	\[ Z(vX-wY, \quad wX+vY) \]
+	
+	
+	\newpage
+	OMEGA
+	\[ \Omega \]
+	\[ \Omega(p, q)  \]
+	\[ p, q \in \mathbb{R}  \]
+	
+	\[ Z\Omega = \sqrt{\{(vX-wY)-p\}^2 + \{(wX+vY)-q\}^2} \]
+	\[ Z\Omega = \sqrt{\{(vX-wY)-p\}^2 + \{(wX+vY)-q\}^2} = 0 \]
+	\[ = \sqrt{\{ (vX-wY)^2 {+} p^2 -2p(vX-wY) \} {+} \{ (wX{+}vY)^2 {+} q^2 {+} 2q(wX{+}vY) \}} = 0 \]
+	\[ Z\Omega = \sqrt{\{ (vX-wY)^2 {+} 0^2 -2 \cdot 0 \cdot (vX-wY) \} {+} \{ (wX{+}vY)^2 {+} 0^2 {+} 2 \cdot 0 \cdot (wX{+}vY) \}} \]
+	\[ = \sqrt{(vX-wY)^2 {+} (wX{+}vY)^2} = 0 \]
+	
+	\[ Z\Omega =  \sqrt{(vX-wY)^2 + (wX+vY)^2} = 0 \]
+	\[ \Rightarrow (vX-wY)^2 + (wX+vY)^2 = 0 \]
+	
+	\[ (vX-wY)^2 + (wX+vY)^2 = (v^2X^2 + w^2Y^2 - 2vwXY) + (w^2X^2 + v^2Y^2 + 2vwXY) \]
+	\[ = (v^2 + w^2)X^2 + (v^2 + w^2)Y^2 \]
+	\[ = (v^2 + w^2)(X^2+Y^2) = 0 \]
+	
+	\[ (v^2 + w^2)(X^2+Y^2) = 0 \qquad \Rightarrow \qquad X^2+Y^2 = 0 \]
+	\[ \because v, w \in \mathbb{R}, \quad v^2 + w^2 > 0 \]
+	
+	
+	\newpage
+	X of $\zeta(s)$
+	\[ \zeta(s) = \zeta(\frac{1}{b}+ci) = X+Yi := X_{(b,c)} + Y_{(b,c)}i \]
+	
+	\[ \begin{array}{c}
+		X_{\zeta(s)}^2 = (x_1 + x_2 + x_3 + \dots + x_k)^2 = (x_1^2 + x_2^2 + x_3^2 + \dots + x_k^2) \\
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(x_1x_2 + x_1x_3 + x_1x_4 + \dots + x_{1}x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (x_2x_3 + x_2x_4 + x_2x_5 + \dots + x_2x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (x_3x_4 + x_3x_5 + x_3x_6 + \dots + x_3x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+		\qquad\qquad\qquad\qquad + \dots + (x_{k-1}x_{k}) \} \\ 
+	\end{array} \]
+	\[\]
+	
+	\[ = \Bigl( \frac{\cos({c\ln 1})}{\sqrt[b]{1}} + \frac{\cos({c\ln 2})}{\sqrt[b]{2}} + \frac{\cos({c\ln 3})}{\sqrt[b]{3}} + \dots + \frac{\cos({c\ln k})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\cos^2({c \ln 1}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\cos^2({c \ln 2}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\cos^2({c \ln 3}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\cos^2({c \ln k}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ \Bigl( \frac{1}{1} \cdot \frac{1}{2}& \Bigr)^\frac1b \cos(c \ln1) \cos(c \ln2) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \cos(c \ln 1) \cos(c \ln 3) \\ 
+		& + \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln 1) \cos(c \ln 4) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln 1) \cos(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{2} \cdot \frac{1}{3}& \Bigr)^\frac1b \cos(c \ln2) \cos(c \ln3) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln 2) \cos(c \ln 4) \\ 
+		& + \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln 2) \cos(c \ln 5) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln 2) \cos(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{3} \cdot \frac{1}{4}& \Bigr)^\frac1b \cos(c \ln3) \cos(c \ln4) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln 3) \cos(c \ln 5) \\ 
+		& + \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \cos(c \ln 3) \cos(c \ln 6) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln 3) \cos(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln (k-1)) \cos(c \ln k) \Biggr\}
+	\end{aligned}
+	\]
+	
+	in new xk
+	\[ = \Bigl( \frac{\cos({c\ln \frac{1}{1}})}{\sqrt[b]{1}} + \frac{\cos({c\ln \frac{1}{2}})}{\sqrt[b]{2}} + \frac{\cos({c\ln \frac{1}{3}})}{\sqrt[b]{3}} + \dots + \frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{1}}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{2}}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{3}}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{k}}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ \Bigl( \frac{1}{1} \cdot \frac{1}{2}& \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{3}) \\ 
+		& + \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{4}) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{2} \cdot \frac{1}{3}& \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{4}) \\ 
+		& + \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{5}) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{3} \cdot \frac{1}{4}& \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{4}) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{5}) \\ 
+		& + \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{6}) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
+	\end{aligned}
+	\]
+	
+	
+	\newpage
+	Y of $\zeta(s)$
+	\[ \begin{array}{c}
+		Y_{\zeta(s)}^2 = (y_1 + y_2 + y_3 + \dots + y_k)^2 = (y_1^2 + y_2^2 + y_3^2 + \dots + y_k^2) \\
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(y_1y_2 + y_1y_3 + y_1y_4 + \dots + y_{1}y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (y_2y_3 + y_2y_4 + y_2y_5 + \dots + y_2y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (y_3y_4 + y_3y_5 + y_3y_6 + \dots + y_3y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+		\qquad\qquad\qquad\qquad + \dots + (y_{k-1}y_{k}) \} \\ 
+	\end{array} \]
+	\[\]
+	
+	\[ = \Bigl( \frac{\sin({c\ln \frac{1}{1}})}{\sqrt[b]{1}} + \frac{\sin({c\ln \frac{1}{2}})}{\sqrt[b]{2}} + \frac{\sin({c\ln \frac{1}{3}})}{\sqrt[b]{3}} + \dots + \frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\sin^2({c \ln 1}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\sin^2({c \ln 2}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\sin^2({c \ln 3}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\sin^2({c \ln k}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ \Bigl( \frac{1}{1} \cdot \frac{1}{2}& \Bigr)^\frac1b \sin(c \ln1) \sin(c \ln2) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \sin(c \ln 1) \sin(c \ln 3) \\ 
+		& + \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln 1) \sin(c \ln 4) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln 1) \sin(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{2} \cdot \frac{1}{3}& \Bigr)^\frac1b \sin(c \ln2) \sin(c \ln3) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln 2) \sin(c \ln 4) \\ 
+		& + \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln 2) \sin(c \ln 5) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln 2) \sin(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{3} \cdot \frac{1}{4}& \Bigr)^\frac1b \sin(c \ln3) \sin(c \ln4) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln 3) \sin(c \ln 5) \\ 
+		& + \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \sin(c \ln 3) \sin(c \ln 6) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln 3) \sin(c \ln k) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln (k-1)) \sin(c \ln k) \Biggr\}
+	\end{aligned}
+	\]
+	in new yk
+	
+	\[ = \Bigl( \frac{\sin({c\ln \frac{1}{1}})}{\sqrt[b]{1}} + \frac{\sin({c\ln \frac{1}{2}})}{\sqrt[b]{2}} + \frac{\sin({c\ln \frac{1}{3}})}{\sqrt[b]{3}} + \dots + \frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{1}}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{2}}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{3}}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{k}}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ \Bigl( \frac{1}{1} \cdot \frac{1}{2}& \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) \\ 
+		& + \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{2} \cdot \frac{1}{3}& \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) \\ 
+		& + \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad + \Bigl( \frac{1}{3} \cdot \frac{1}{4}& \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{4}) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) \\ 
+		& + \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
+	\end{aligned}
+	\]
+	
+	
+	\[ X_{\zeta(s)}^2 \]
+	\[ Y_{\zeta(s)}^2 \]
+	
+	\[ X_{\zeta(s)}^2 + Y_{\zeta(s)}^2 = 0 \]
+	
+	\[ \alpha_{\zeta(s)} \]
+	\[ \beta_{\zeta(s)} \]
+	
+	\[
+	\begin{aligned}
+		\alpha_{\zeta(s)} =& \, x_1x_2 + x_1x_3 + x_1x_4 + \dots + x_{1}x_{k} \\
+		& + x_2x_3 + x_2x_4 + x_2x_5 + \dots + x_2x_{k} \\
+		& + x_3x_4 + x_3x_5 + x_3x_6 + \dots + x_3x_{k} \\
+		& \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \\
+		&  + \dots + (x_{k-1}x_{k})
+	\end{aligned}
+	\]
+	
+	\[
+	\begin{aligned}
+		\beta_{\zeta(s)} =& \, y_1y_2 + y_1y_3 + y_1y_4 + \dots + y_{1}y_{k} \\
+		& + y_2y_3 + y_2y_4 + y_2y_5 + \dots + y_2y_{k} \\
+		& + y_3y_4 + y_3y_5 + y_3y_6 + \dots + y_3y_{k} \\
+		& \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \qquad\vdots \\
+		&  + \dots + (y_{k-1}y_{k})
+	\end{aligned}
+	\]
+	
+	\[ X^2_{\zeta(s)} = (x_1^2 + x_2^2 + x_3^2 + \dots + x_k^2) + 2 \alpha_{\zeta(s)} = \sum\limits_{k=1}^{\infty}x_k^2 + 2 \alpha_{\zeta(s)} \]
+	
+	\[ Y^2_{\zeta(s)} = (y_1^2 + y_2^2 + y_3^2 + \dots + y_k^2) + 2 \beta_{\zeta(s)} = \sum\limits_{k=1}^{\infty}y_k^2 + 2 \beta_{\zeta(s)} \]
+	
+	\[ X^2_{\zeta(s)} + Y^2_{\zeta(s)} = \sum\limits_{k=1}^{\infty}x_k^2 + 2\alpha_{\zeta(s)} + \sum\limits_{k=1}^{\infty}y_k^2 + 2\beta_{\zeta(s)} \]
+	
+	\[ = \sum\limits_{k=1}^{\infty}x_k^2 + \sum\limits_{k=1}^{\infty}y_k^2 + 2\alpha_{\zeta(s)} +  2\beta_{\zeta(s)} = 0 \]
+	
+	\[ x_k^2 + y_k^2 = \frac{\cos^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} + \frac{\sin^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} \]
+	\[ = \frac{\cos^2(c \ln \frac{1}{k}) + \sin^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} = \frac{1}{k^{\frac{2}{b}}} \]
+	
+	\[ X^2_{\zeta(s)} + Y^2_{\zeta(s)} = \sum\limits_{k=1}^{\infty}\frac{1}{k^{\frac{2}{b}}} + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = \zeta(\frac{2}{b}) + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = 0 \]
+	
+	\[ \zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) \]
+	
+	
+	\newpage
+	DIVERGENCE of ALPHA and BETA
+	\[ \alpha_{\zeta(s)} + \beta_{\zeta(s)} = \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad (k \to \infty) \]
+	\[
+	\begin{aligned}
+		& \Bigl( \frac{1}{1} \cdot \frac{1}{2} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{3}) + \\
+		& \Bigl( \frac{1}{1} \cdot \frac{1}{2} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) + 
+	\end{aligned}
+	\]
+	
+	\[
+	\begin{aligned}
+		\qquad\qquad\quad & \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{4}) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{k}) + \\
+		& \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) + \dots + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) +
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		& \Bigl( \frac{1}{2} \cdot \frac{1}{3} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{4}) + \\
+		& \Bigl( \frac{1}{2} \cdot \frac{1}{3} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\qquad\qquad\quad & \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{5}) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{k}) + \\
+		& \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) + \dots + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) +
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		& \Bigl( \frac{1}{3} \cdot \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln\frac{1}{4}) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{5}) + \\
+		& \Bigl( \frac{1}{3} \cdot \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{4}) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\qquad\qquad\quad & \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{6}) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{k}) + \\
+		& \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) + \dots + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) +
+	\end{aligned}
+	\]
+	
+	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \]
+	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \]
+	
+	By initial grouping, we can have similar cosine and sine terms together....
+	
+	\[
+	\begin{aligned}
+		= \quad & \Bigl( \frac{1}{1} \cdot \frac{1}{2} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{2}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{3}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{4}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \dots  + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad & \Bigl( \frac{1}{2} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{3}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{4}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{5}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) \Bigr) + \\
+		& \qquad \dots  + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad & \Bigl( \frac{1}{3} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{3}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{5}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{6}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) \Bigr) + \\
+		& \qquad \dots  + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[ \qquad\qquad \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Bigr) \]
+	
+	Then we may utilise that fact that $ \cos{A} \cdot \cos{B} = \cos{(A-B)} - \sin{A}\sin{B} $ to cancel out all the sine terms.
+	
+	\[
+	\begin{aligned}
+		= \quad & \Bigl( \frac{1}{1} \cdot \frac{1}{2} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{2}) - \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{3}) - \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{4}) - \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) \Bigr) + \\
+		& \dots  + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{k}) - \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad & \Bigl( \frac{1}{2} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{3}) - \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{4}) - \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{5}) - \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) \Bigr) + \\
+		& \dots  + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{k}) - \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad & \Bigl( \frac{1}{3} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{4}) - \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{4}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{5}) - \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{6}) - \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) \Bigr) + \\
+		& \dots  + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{k}) - \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) - \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Bigr) \]
+	
+	\[
+	\begin{aligned}
+		= \quad & \Bigl( \frac{1}{1} \cdot \frac{1}{2} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{2}) \Bigr) + \Bigl( \frac{1}{1} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{1} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{4}) \Bigr) + \dots  + \Bigl( \frac{1}{1} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad & \Bigl( \frac{1}{2} \cdot \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{3}) \Bigr) + \Bigl( \frac{1}{2} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{2} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln\frac{1}{5}) \Bigr) + \dots  + \Bigl( \frac{1}{2} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad & \Bigl( \frac{1}{3} \cdot \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{4}) \Bigr) + \Bigl( \frac{1}{3} \cdot \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{5}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{6}) \Bigr) + \dots  + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{k}) \Bigr) + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) \Bigr) \]
+	
+	Common terms of each group can be factored out.
+	\[
+	\begin{aligned}
+		= \quad & \Bigl( \frac{1}{1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{2} \Bigr)^\frac1b \cos(c \ln \frac{1}{1} - c \ln \frac{1}{2}) \Bigr) + \Bigl( \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{3}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{4}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{1} - c \ln \frac{1}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad & \Bigl( \frac{1}{2}  \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{3} \Bigr)^\frac1b \cos(c \ln \frac{1}{2} - c \ln \frac{1}{3}) \Bigr) + \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{4}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{5}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{2} - c \ln \frac{1}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad & \Bigl( \frac{1}{3} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{3} - c \ln \frac{1}{4}) \Bigr) + \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{5}) \Bigr) + \\
+		& \qquad \Bigl( \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{6}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) \Biggr\} \]
+	
+	Finally, the logarithm trick where $ \ln{A} - \ln{B} = \ln{\frac{A}{B}} $ will merge all the c$\ln k$ wherever possible.
+	
+	\[
+	\begin{aligned}
+		= \quad \Bigl( \frac{1}{1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{2} \Bigr)^\frac1b &\cos(c \ln \frac{2}{1}) \Bigr) + \Bigl( \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{1}) \Bigr) + \\
+		& \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{4}{1}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{k}{1}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad \Bigl( \frac{1}{2}  \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{3} \Bigr)^\frac1b &\cos(c \ln \frac{3}{2}) \Bigr) + \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{4}{2}) \Bigr) + \\
+		& \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{5}{2}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{k}{2}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad \Bigl( \frac{1}{3} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{4} \Bigr)^\frac1b &\cos(c \ln \frac{4}{3}) \Bigr) + \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{5}{3}) \Bigr) + \\
+		& \Bigl( \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{6}{3}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{k}{3}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{k}{k-1}) \Biggr\} \]
+	
+	\[
+	\begin{aligned}
+		= \quad \Bigl( \frac{1}{1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{2} \Bigr)^\frac1b &\cos(c \ln \frac{1}{2}) \Bigr) + \Bigl( \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \Bigr) + \\
+		& \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{4}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad \Bigl( \frac{1}{2}  \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{3} \Bigr)^\frac1b &\cos(c \ln \frac{2}{3}) \Bigr) + \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{4}) \Bigr) + \\
+		& \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{5}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad \Bigl( \frac{1}{3} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{4} \Bigr)^\frac1b &\cos(c \ln \frac{3}{4}) \Bigr) + \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{5}) \Bigr) + \\
+		& \Bigl( \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{6}) \Bigr) + \dots  + \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{k-1}{k}) \Biggr\} \]
+	
+	\[ \frac{2}{b} \leq 1 \]
+	\[ b \geq 2 \]
+	
+	
+	--- END of ZETA = X + Yi ------
+	
+	\newpage
+	Start of ETA = G + Hi
+	
+	\[ \zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) \]
+	\[ \zeta\biggl( \frac{2}{b} \biggr) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) \]
+	
+	\[ \frac{\eta( \frac{2}{b} )}{D_{\frac{2}{b}}}  \]
+	
+	\[ D_{\frac{2}{b}} \]
+	\[ D_{\frac{2}{b}} = 1 - 2^{1-\frac{2}{b}} \]
+	
+	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} \]
+	
+	------
+	\[ \eta(s) \qquad = \qquad +\frac{1}{1^s} \qquad \Big|\Big|  \qquad +\frac{\cos({c\ln 1})}{\sqrt[b]{1}} \qquad +\frac{-\sin({c\ln 1})}{\sqrt[b]{1}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad -\frac{1}{2^s} \qquad \Big|\Big|  \qquad -\frac{\cos({c\ln 2})}{\sqrt[b]{2}} \qquad -\frac{-\sin({c\ln 2})}{\sqrt[b]{2}} \quad i  \]
+	
+	\[ \quad \qquad  \qquad \qquad +\frac{1}{3^s} \qquad \Big|\Big|  \qquad +\frac{\cos({c\ln 3})}{\sqrt[b]{3}} \qquad +\frac{-\sin({c\ln 3})}{\sqrt[b]{3}} \quad i  \]
+	
+	\[ \vdots \]
+	
+	\[ \qquad  \quad +\frac{(-1)^{k-1}}{k^s} \qquad \Big|\Big|  \qquad \frac{\cos({c\ln k}){\cdot(-1)^{k-1}}}{\sqrt[b]{k}} \qquad \frac{{-}\sin({c\ln k}){\cdot({-}1)^{k-1}}}{\sqrt[b]{k}} \quad i  \]
+	
+	\[\quad \rule{12 cm}{.8pt} \quad \]
+	%\[ \qquad \qquad \qquad z \qquad\qquad =  \qquad\qquad X \qquad + \qquad Y \quad i \qquad\qquad \]
+	\[ \qquad \qquad \qquad z \qquad\qquad =  \qquad\qquad G \qquad + \qquad H \quad i \qquad\qquad \]
+	
+	\[ \text{or} \]
+	\[ z (G, H) \]
+	
+	\[ G = \sum\limits_{k=1}^{\infty}g^k \]
+	\[ H = \sum\limits_{k=1}^{\infty}h^k \]
+	
+	\[ g_k = (-1)^{k-1} \cdot x_k \]
+	\[ h_k = (-1)^{k-1} \cdot y_k \]
+	
+	\[ x_k = \frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
+	\[ y_k = \frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
+	
+	\[ \Re(\eta(s)) = G \]
+	\[ \Im(\eta(s)) = H \]
+	\[ Re(\eta(s)) = G \]
+	\[ Im(\eta(s)) = H \]
+	
+	\[ \zeta(s) =  \]
+	\[ \zeta(s) = \frac{\eta(s)}{D_{s}} = \frac{G + Hi}{1-2^{1-s}} = \frac{(G+Hi)(v-wi)}{(v+wi)(v-wi)} \]
+	
+	\[ = \frac{vG-wGi+vHi-wHi^2}{v^2+w^2} = \frac{(vG+wH)+(-wG+vH)i}{v^2+w^2} \]
+	\[ = \frac{vG+wH}{v^2+w^2} + \frac{(-wG+vH)}{v^2+w^2}i \]
+	\[ \text{or} \]
+	\[ \quad Z(\frac{vG+wH}{v^2+w^2}, \quad \frac{-wG+vH}{v^2+w^2}) \]
+	\[ \quad Z\biggr(\frac{vG+wH}{v^2+w^2}, \quad \frac{-wG+vH}{v^2+w^2}\biggl) \]
+	\[\]
+	
+	
+	\[ Z\Omega = \sqrt{(\frac{vG+wH}{v^2+w^2}-p)^2 - (\frac{-wG+vH}{v^2+w^2}-q)^2} \]
+	
+	\[ Z\Omega = \sqrt{(\frac{vG+wH}{v^2+w^2}-p)^2 - (\frac{-wG+vH}{v^2+w^2}-q)^2} = 0 \]
+	\[ = \sqrt{  (\frac{vG{+}wH}{v^2{+}w^2})^2 {+} p^2 {-} 2p(\frac{vG{+}wH}{v^2{+}w^2}) {+} (\frac{-wG{+}vH}{v^2{+}w^2})^2 {+} q^2 {-}2q(\frac{-wG{+}vH}{v^2{+}w^2}) } = 0 \]
+	
+	\[ Z\Omega = \sqrt{  (\frac{vG{+}wH}{v^2{+}w^2})^2 {+} 0^2 {-} 2 {\cdot} 0 (\frac{vG{+}wH}{v^2{+}w^2}) {+} (\frac{-wG{+}vH}{v^2{+}w^2})^2 {+} 0^2 {-} 2 {\cdot} 0 (\frac{-wG{+}vH}{v^2{+}w^2}) } \]
+	
+	\[ = \sqrt{(\frac{vG{+}wH}{v^2{+}w^2})^2 + (\frac{-wG{+}vH}{v^2{+}w^2})^2} = 0 \]
+	
+	We may square both sides and before continuing.
+	\[ \Bigl(\frac{vG{+}wH}{v^2{+}w^2}\Bigr)^2 + \Bigl(\frac{-wG{+}vH}{v^2{+}w^2}\Bigr)^2 = 0 \]
+	
+	\[ = \frac{v^2G^2 + w^2H^2 + 2vwGH}{(v^2+w^2)^2} + \frac{w^2G^2 + v^2H^2 - 2vwGH}{(v^2+w^2)^2} \]
+	\[ = \frac{v^2G^2 + w^2H^2 + w^2G^2 + v^2H^2}{(v^2+w^2)^2} \]
+	\[ = \frac{(v^2+w^2)G^2 + (v^2+w^2)H^2}{(v^2+w^2)^2} \]
+	\[ = \frac{(v^2+w^2)(G^2 + H^2)}{(v^2+w^2)^2} = 0 \]
+	
+	\[ = (v^2+w^2)(G^2 + H^2) = 0 \qquad (\because v, w \in \mathbb{R}, \quad v^2 + w^2 > 0)  \]
+	\[ v^2+w^2 > 0 \]
+	
+	\[ \eta(s) = \eta(\frac{1}{b}+ci) := G+Hi \]
+	\[ G^2 \qquad H^2\]
+	
+	\[ \begin{array}{c}
+		G^2 = (g_1 + g_2 + g_3 + \dots + g_k)^2 = (g_1^2 + g_2^2 + g_3^2 + \dots + g_k^2) \\
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(g_1g_2 + g_1g_3 + g_1g_4 + \dots + g_{1}g_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (g_2g_3 + g_2g_4 + g_2g_5 + \dots + g_2g_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (g_3g_4 + g_3g_5 + g_3g_6 + \dots + g_3g_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+		\qquad\qquad\qquad\qquad + \dots + (g_{k-1}g_{k}) \} \\ 
+	\end{array} \]
+	\[ \begin{array}{c}
+		\qquad\qquad\qquad\quad = (x_1^2 + x_2^2 + x_3^2 + \dots + x_k^2) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(-x_1x_2 + x_1x_3 - x_1x_4 + \dots \pm x_{1}x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (-x_2x_3 + x_2x_4 - x_2x_5 + \dots \mp x_{2}x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (-x_3x_4 + x_3x_5 - x_3x_6 + \dots \pm x_{3}x_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+		\qquad\qquad\qquad + \dots - (x_{k-1}x_{k}) \} \\ 
+	\end{array} \]
+	\[\]
+	\[\]
+	\[ = \Bigl( \frac{\cos({c\ln \frac{1}{1}})}{\sqrt[b]{1}} - \frac{\cos({c\ln \frac{1}{2}})}{\sqrt[b]{2}} + \frac{\cos({c\ln \frac{1}{3}})}{\sqrt[b]{3}} - \dots \pm \frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[\]
+	\[\]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{1}}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{2}}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{3}}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\cos^2({c \ln \frac{1}{k}}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ -\Bigl( \frac{1}{1} {\cdot} \frac{1}{2}& \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} {\cdot} \frac{1}{3} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{3}) \\ 
+		& - \Bigl( \frac{1}{1} {\cdot} \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{4}) + \dots \pm \Bigl( \frac{1}{1} {\cdot} \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{1}) \cos(c \ln \frac{1}{k}) \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad - \Bigl( \frac{1}{2} {\cdot} \frac{1}{3}& \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} {\cdot} \frac{1}{4} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{4}) \\ 
+		& - \Bigl( \frac{1}{2} {\cdot} \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{5}) + \dots \pm \Bigl( \frac{1}{2} {\cdot} \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{2}) \cos(c \ln \frac{1}{k}) \\
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad - \Bigl( \frac{1}{3} {\cdot} \frac{1}{4}& \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{4}) + \Bigl( \frac{1}{3} {\cdot} \frac{1}{5} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{5}) \\
+		& - \Bigl( \frac{1}{3} {\cdot} \frac{1}{6} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{6}) + \dots \pm \Bigl( \frac{1}{3} {\cdot} \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots - \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
+	\end{aligned}
+	\]
+	
+	\[ \begin{array}{c}
+	H^2 = (h_1 + h_2 + h_3 + \dots + h_k)^2 = (h_1^2 + h_2^2 + h_3^2 + \dots + h_k^2) \\
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(h_1h_2 + h_1h_3 + h_1h_4 + \dots + h_{1}h_{k}) \\ 
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (h_2h_3 + h_2h_4 + h_2h_5 + \dots + h_2h_{k}) \\ 
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (h_3h_4 + h_3h_5 + h_3h_6 + \dots + h_3h_{k}) \\ 
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+	\qquad\qquad\qquad\qquad + \dots + (h_{k-1}h_{k}) \} \\ 
+	\end{array} \]
+	\[ \begin{array}{c}
+		\qquad\qquad\qquad\quad = (y_1^2 + y_2^2 + y_3^2 + \dots + y_k^2) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\quad + 2\{(-y_1y_2 + y_1y_3 - y_1y_4 + \dots \pm y_{1}y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (-y_2y_3 + y_2y_4 - y_2y_5 + \dots \mp y_{2}y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad + (-y_3y_4 + y_3y_5 - y_3y_6 + \dots \pm y_{3}y_{k}) \\ 
+		\qquad\qquad\qquad\qquad\qquad\qquad\qquad \vdots \\
+		\qquad\qquad\qquad + \dots - (y_{k-1}y_{k}) \} \\
+	\end{array} \]
+	\[\]
+	\[\]
+	\[ = \Bigl( \frac{\sin({c\ln \frac{1}{1}})}{\sqrt[b]{1}} - \frac{\sin({c\ln \frac{1}{2}})}{\sqrt[b]{2}} + \frac{\sin({c\ln \frac{1}{3}})}{\sqrt[b]{3}} - \dots \pm \frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \Bigr)^2 \]
+	\[\]
+	\[\]
+	\[ = \Bigl( \frac{1}{1} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{1}}) + \Bigl( \frac{1}{2} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{2}}) + \Bigl( \frac{1}{3} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{3}}) + \dots + \Bigl( \frac{1}{k} \Bigr)^{\frac2b}\sin^2({c \ln \frac{1}{k}}) \]
+	\[
+	\begin{aligned}
+		+2\Biggl\{ -\Bigl( \frac{1}{1} {\cdot} \frac{1}{2}& \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{2}) + \Bigl( \frac{1}{1} {\cdot} \frac{1}{3} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{3}) \\ 
+		& - \Bigl( \frac{1}{1} {\cdot} \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{4}) + \dots \pm \Bigl( \frac{1}{1} {\cdot} \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{1}) \sin(c \ln \frac{1}{k}) \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad - \Bigl( \frac{1}{2} {\cdot} \frac{1}{3}& \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{3}) + \Bigl( \frac{1}{2} {\cdot} \frac{1}{4} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{4}) \\ 
+		& - \Bigl( \frac{1}{2} {\cdot} \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{5}) + \dots \pm \Bigl( \frac{1}{2} {\cdot} \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{2}) \sin(c \ln \frac{1}{k}) \\
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad - \Bigl( \frac{1}{3} {\cdot} \frac{1}{4}& \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{4}) + \Bigl( \frac{1}{3} {\cdot} \frac{1}{5} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{5}) \\
+		& - \Bigl( \frac{1}{3} {\cdot} \frac{1}{6} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{6}) + \dots \pm \Bigl( \frac{1}{3} {\cdot} \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) + \\ 		
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad + \dots - \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
+	\end{aligned}
+	\]
+	
+	\[ G^2 = g_1^2 + g_2^2 + g_3^2 + \dots + g_k^2 + 2\alpha_{\eta(s)} \]
+	\[ = x_1^2 + x_2^2 + x_3^2 + \dots + x_k^2 + 2\alpha_{\eta(s)} \]
+	\[ = \sum\limits_{k=1}^{\infty}x_k^2 + 2\alpha_{\eta(s)} \]
+	
+	\[ H^2 = h_1^2 + h_2^2 + h_3^2 + \dots + h_k^2 + 2\beta_{\eta(s)} \]
+	\[ = y_1^2 + y_2^2 + y_3^2 + \dots + y_k^2 + 2\beta_{\eta(s)} \]
+	\[ = \sum\limits_{k=1}^{\infty}y_k^2 + 2\beta_{\eta(s)} \]
+	
+	\[ G^2 + H^2 = \sum\limits_{k=1}^{\infty}x_k^2 + 2\alpha_{\eta(s)} + \sum\limits_{k=1}^{\infty}y_k^2 + 2\beta_{\eta(s)} \]
+	\[ G^2 + H^2 = \sum\limits_{k=1}^{\infty}(x_k^2 + y_k^2) + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
+	\[ = \sum\limits_{k=1}^{\infty}\frac{1}{k^{\frac{2}{b}}} + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
+	\[ = \zeta(\frac{2}{b}) + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) = 0 \]
+	\[ \zeta(\frac{2}{b}) = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
+	\[ \zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{\frac{2}{b}}} \]
+	\[ D_{\frac{2}{b}} = 1 - 2^{1-\frac{2}{b}} \]
+	
+	\[ \alpha_{\zeta(s)} + \beta_{\zeta(s)} \]
+	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} \]
+	
+	\[ \alpha_{\zeta(s)} = x_1x_2 + x_1x_3 + x_1x_4 + \dots + x_{1}x_{k} +x_2x_3 + x_2x_4 + x_2x_5 + \dots + x_{2}x_{k} \]
+	\[ +x_3x_4 + x_3x_5 + x_3x_6 + \dots + x_{3}x_{k} +x_4x_5 + x_4x_6 + x_4x_7 + \dots + x_{4}x_{k} + \dots + x_{k+1}x_{k} \]
+	
+	\[ \alpha_{\eta(s)} = -x_1x_2 + x_1x_3 - x_1x_4 + \dots \pm x_{1}x_{k} -x_2x_3 + x_2x_4 - x_2x_5 + \dots \mp x_{2}x_{k} \]
+	\[ -x_3x_4 + x_3x_5 - x_3x_6 + \dots \pm x_{3}x_{k} -x_4x_5 + x_4x_6 - x_4x_7 + \dots \mp x_{4}x_{k} - \dots - x_{k-1}x_{k} \]
+	
+	\[ \beta_{\zeta(s)} = y_1y_2 + y_1y_3 + y_1y_4 + \dots + y_{1}y_{k} +y_2y_3 + y_2y_4 + y_2y_5 + \dots + y_{2}y_{k} \]
+	\[ +y_3y_4 + y_3y_5 + y_3y_6 + \dots + y_{3}y_{k} +y_4y_5 + y_4y_6 + y_4y_7 + \dots + y_{4}y_{k} + \dots + y_{k+1}y_{k} \]
+	
+	\[ \beta_{\eta(s)} = -y_1y_2 + y_1y_3 - y_1y_4 + \dots \pm y_{1}y_{k} -y_2y_3 + y_2y_4 - y_2y_5 + \dots \mp y_{2}y_{k} \]
+	\[ -y_3y_4 + y_3y_5 - y_3y_6 + \dots \pm y_{3}y_{k} -y_4y_5 + y_4y_6 - y_4y_7 + \dots \mp y_{4}y_{k} - \dots - y_{k-1}y_{k} \]
+	
+	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad (k \to \infty) \]
+	\[
+	\begin{aligned}
+		= \quad \Bigl( \frac{1}{1} \Bigr)^\frac1b \Biggl\{ -\Bigl( \frac{1}{2} \Bigr)^\frac1b &\cos(c \ln \frac{1}{2}) \Bigr) + \Bigl( \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \Bigr) \\
+		& -\Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{4}) \Bigr) + \dots \pm \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k}) \Bigr) \Biggr\} 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad +\Bigl( \frac{1}{2} \Bigr)^\frac1b \Biggl\{ -\Bigl( \frac{1}{3} \Bigr)^\frac1b &\cos(c \ln \frac{2}{3}) \Bigr) + \Bigl( \frac{1}{4} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{4}) \Bigr) \\
+		& -\Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{5}) \Bigr) + \dots \pm \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{2}{k}) \Bigr) \Biggr\}
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad +\Bigl( \frac{1}{3} \Bigr)^\frac1b \Biggl\{ -\Bigl( \frac{1}{4} \Bigr)^\frac1b &\cos(c \ln \frac{3}{4}) \Bigr) + \Bigl( \frac{1}{5} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{5}) \Bigr) \\
+		& -\Bigl( \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{6}) \Bigr) + \dots \pm \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{3}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+		\quad\quad +\Bigl( \frac{1}{4} \Bigr)^\frac1b \Biggl\{ -\Bigl( \frac{1}{5} \Bigr)^\frac1b &\cos(c \ln \frac{4}{5}) \Bigr) + \Bigl( \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{4}{6}) \Bigr) \\
+		& -\Bigl( \frac{1}{7} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{4}{7}) \Bigr) + \dots \pm \Bigl( \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{4}{k}) \Bigr) \Biggr\} + 
+	\end{aligned}
+	\]
+	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ -\Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{k-1}{k}) \Biggr\} \]
+	
+	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \Big(\frac{1}{1}\Big)^{\frac{1}{b}}A_1 + \Big(\frac{1}{2}\Big)^{\frac{1}{b}}A_2 + \Big(\frac{1}{3}\Big)^{\frac{1}{b}}A_3 + \dots + \Big(\frac{1}{m}\Big)^{\frac{1}{b}}A_m \]
+	
+	\[ F_m = \sum\limits_{k=1}^{\infty} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	\[ A_m = F_m - \sum\limits_{k=1}^{m} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	\[\]
+	Fm and Am expressed in Dirichlet Eta
+	
+	\[ \cos(c \ln \frac{m}{k}) \]
+	\[ \cos(c \ln \frac{m}{k}) = \frac{e^{i \cdot c \ln \frac{m}{k}} + e^{-i \cdot c \ln \frac{m}{k}}}{2} \]
+	\[ = \frac{e^{\ln (\frac{m}{k})^{ci}} + e^{\ln (\frac{m}{k})^{-ci}}}{2} \]
+	\[ = \frac{(\frac{m}{k})^{ci} + (\frac{m}{k})^{-ci}}{2} \]
+	\[ = \frac{m^{ci}k^{-ci} + m^{-ci}k^{ci}}{2} \]
+	
+	\[ \frac{\cos(c \ln \frac{m}{k}) \cdot (-1)^{k-1}}{k^{\frac{1}{b}}} \]
+	\[ \frac{ (-1)^{k-1} {\cdot} (m^{ci}k^{-ci} + m^{-ci}k^{ci}) }{2k^{\frac{1}{b}}} \]
+	\[ \frac{1}{2} \Bigl\{ \frac{ (-1)^{k-1}m^{ci}k^{-ci}  }{k^{\frac{1}{b}}} + \frac{ (-1)^{k-1}m^{-ci}k^{ci}  }{k^{\frac{1}{b}}}  \Bigr\} \]
+	\[ \frac{m^{ci}}{2} {\cdot} \frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}} + \frac{m^{-ci}}{2} {\cdot} \frac{(-1)^{k-1}}{k^{\frac{1}{b}-ci}} \]
+	\[ = \frac{1}{2} \Big( m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^{s}} + m^{-ci} {\cdot} \frac{(-1)^{k-1}}{k^{\bar{s}}}   \Big) \]
+	
+	\[ m^{ci} =  e^{(\ln m){\cdot}ci} = e^{i{\cdot}(c\ln m)} = \cos(c \ln m) + \sin(c \ln m) i \]
+	\[ m^{-ci} =  e^{(\ln m){\cdot}(-ci)} = e^{i{\cdot}(-c\ln m)} = \cos(-c \ln m) + \sin(-c \ln m) i \]
+	\[ = \cos(c \ln m) - \sin(c \ln m) i  \]
+	
+	\[ \frac{(-1)^{k-1}}{k^s} = \frac{\cos(c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} + \frac{\sin(c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} i \]
+	\[ \frac{(-1)^{k-1}}{k^{\bar{s}}} = \frac{\cos(-c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} + \frac{\sin(-c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} i \]
+	\[ = \frac{\cos(c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} - \frac{\sin(c \ln \frac{1}{k}){\cdot}(-1)^{k-1}}{\sqrt[b]{k}} i \]
+	
+	\[ m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^s} = \frac{\Big( \cos(c \ln m) {+} \sin(c \ln m) i \Big) \Big(\cos(c \ln \frac{1}{k}) {+} \sin(c \ln \frac{1}{k})i \Big) {\cdot} (-1)^{k-1} }{\sqrt[b]{k}} \]
+	
+	\[ \frac{ \Big\{ \cos(c \ln m)\cos(c \ln \frac{1}{k}) {+} \cos(c \ln m)\sin(c \ln \frac{1}{k})i {+} \sin(c \ln m)\cos(c \ln \frac{1}{k})i {+} \sin(c \ln m)\sin(c \ln \frac{1}{k})i^2 \Big\} {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}   \]
+	\[ \frac{ \Big\{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {+} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i \Big\} {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}   \]
+	
+	\[ m^{-ci} {\cdot} \frac{(-1)^{k-1}}{k^s} = \frac{\Big( \cos(c \ln m) {-} \sin(c \ln m) i \Big) \Big(\cos(c \ln \frac{1}{k}) {-} \sin(c \ln \frac{1}{k})i \Big) {\cdot} (-1)^{k-1} }{\sqrt[b]{k}} \]
+	
+	\[ \frac{ \Big\{ \cos(c \ln m)\cos(c \ln \frac{1}{k}) {-} \cos(c \ln m)\sin(c \ln \frac{1}{k})i {-} \sin(c \ln m)\cos(c \ln \frac{1}{k})i {+} \sin(c \ln m)\sin(c \ln \frac{1}{k})i^2 \Big\} {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}   \]
+	\[ \frac{ \Big\{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {-} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i \Big\} {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}   \]
+	
+	\[ \frac{\cos(c \ln \frac{m}{k}) \cdot (-1)^{k-1}}{k^{\frac{1}{b}}} = \frac{1}{2} \Big( m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^{s}} + m^{-ci} {\cdot} \frac{(-1)^{k-1}}{k^{\bar{s}}}   \Big) \]
+	
+	$ \frac{(-1)^{k-1}}{2} {\cdot} \frac{ \Big\{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {+} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i + \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {-} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big) \Big\} }{\sqrt[b]{k}}      $
+	\[\]
+	$ \frac{(-1)^{k-1}}{2} {\cdot} \frac{ \Big\{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {+} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i}{\sqrt[b]{k}}      $
+	$ \frac{ + \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {-} \Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i \Big\} }{\sqrt[b]{k}}      $
+	
+	\[ \frac{(-1)^{k-1}}{2} {\cdot} \frac{  2\Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) }{\sqrt[b]{k}}      \]
+	
+	\[ \frac{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}      \]
+	\[ = Re \Big( m^{ci} \cdot \frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}} \Big) \]
+	
+	\[ F_m = \sum\limits_{k=1}^{\infty} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} = (-1)^{m-1} {\cdot} Re \Big( m^{ci} {\cdot} \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}}   \Big) \]
+	\[ = (-1)^{m-1} {\cdot} Re \Big( m^{ci} {\cdot} \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s}  \Big) = Re \Big( m^{ci} {\cdot} \eta(s)  \Big)  \]
+	
+	
+	\[ F_m = (-1)^{m-1} \cdot Re(m^{ci} \cdot 0) = 0 \]
+	\[ F_m = 0 \]
+	
+	\[ A_m = F_m - \sum\limits_{k=1}^{m} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	\[ = 0 - \sum\limits_{k=1}^{m} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	\[ = 0 - Re \Big( m^{ci} {\cdot} \sum\limits_{k=1}^{m}\frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}}   \Big) {\cdot} (-1)^{m-1}  \]
+	
+	\[ a_1, a_2, a_3, a_4, \dots , a_m \]
+	\[ A_m = -( a_1 + a_2 + a_3 + \dots + a_m ) {\cdot} (-1)^{m-1}  \]
+	\[ = - \Bigg( Re\Big( m^{ci}{\cdot}\frac{(-1)^{0}}{1^s}  \Big) + Re\Big( m^{ci}{\cdot}\frac{(-1)^{1}}{2^s}  \Big) + Re\Big( m^{ci}{\cdot}\frac{(-1)^{2}}{3^s}  \Big) + \dots Re\Big( m^{ci}{\cdot}\frac{(-1)^{m-1}}{m^s}  \Big)     \Bigg) {\cdot} (-1)^{m-1} \]
+	
+	\[ R_m(s) \]
+	\[ \eta_m(s) \]
+	\[ R_m(s) = \eta(s) - \eta_m(s) \]
+	\[ \eta_m(s) = \sum\limits_{k=1}^{m}\frac{(-1)^{k-1}}{k^s}  \]
+	
+	\[ A_m = - Re(m^{ci} {\cdot} \eta_m(s) ) {\cdot} (-1)^{m-1} \]
+	
+	\[ R_m(s) = \eta(s) - \eta_m(s) = 0 - \eta_m(s) \]
+	\[ R_m(s) = -\eta_m(s) \]
+	\[ \eta_m(s) = -R_m(s) \]
+	
+	\[ A_m = - Re(m^{ci} {\cdot} (-R_m(s)) ) {\cdot} (-1)^{m-1} \]
+	
+	\[ R_m \approx \frac{(-1)^{m-1}}{(m+1)^s} \]
+	
+	\[ A_m = - Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg) {\cdot} (-1)^{m-1} \]
+	
+	\[ Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg) = \frac{\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{m-1}}{(m+1)^{\frac{1}{b}}}  \]
+	
+	
+	\[ A_m = - Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg) {\cdot} (-1)^{m-1} \]
+	\[ = -\Bigg( \frac{\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{m-1}}{(m+1)^{\frac{1}{b}}} \Bigg) {\cdot} (-1)^{m-1} \]
+	\[ = \frac{\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{m-1}}{(m+1)^{\frac{1}{b}}} {\cdot} (-1)^{m} \]
+	\[ =  \frac{\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{2m-1}}{(m+1)^{\frac{1}{b}}}  \]
+	\[ =  \frac{-\cos(c \ln \frac{m}{m+1})}{(m+1)^{\frac{1}{b}}}  \]
+	
+	\[ m \in \mathbb{N}, m \to \infty \]
+	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \Big(\frac{1}{1}\Big)^{\frac{1}{b}}A_1 + \Big(\frac{1}{2}\Big)^{\frac{1}{b}}A_2 + \Big(\frac{1}{3}\Big)^{\frac{1}{b}}A_3 + \dots + \Big(\frac{1}{m}\Big)^{\frac{1}{b}}A_m \]
+	\[ = \frac{-\cos(c \ln \frac{1}{2})}{(1{\cdot}2)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{2}{3})}{(2{\cdot}3)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{3}{4})}{(3{\cdot}4)^{\frac{1}{b}}} + \dots + \frac{-\cos(c \ln \frac{m}{m+1})}{((m(m+1))^{\frac{1}{b}}} \]
+	
+	\[ = \frac{-\cos(c \ln \frac{1}{2})}{(1{\cdot}2)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{2}{3})}{(2{\cdot}3)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{3}{4})}{(3{\cdot}4)^{\frac{1}{b}}} + \dots + \frac{-\cos(c \ln \frac{m}{m+1})}{(m^2+m)^{\frac{1}{b}}} \]
+	
+	
+	
+	
+	\[ \zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{\frac{2}{b}}} = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
+	
+	\[ 0 < \frac{2}{b} < 1 \]
+	\[ 1 < 2^{\frac{2}{b}} \leq 2 \]
+	\[ 2^{1-2/b} = 2 / 2^{\frac{2}{b}} \]
+	\[ 1 \leq 2^{1-2/b} < 2 \]
+	\[ -2 < -2^{1-2/b} \leq -1 \]
+	\[ 1-2 < 1-2^{1-2/b} \leq 1-1 \Rightarrow -1 < 1-2^{1-2/b} \leq 0  \] 
+	\[\Rightarrow -1 < D_{2/b} \leq 0  \] 
+	
+	\[ \frac{\eta( \frac{2}{b} )}{D_{\frac{2}{b}}} = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \Rightarrow \frac{converge}{D_{\frac{2}{b}}} = - 2 \cdot diverge \]
+	
+	\[ D_{2/b} = 0 \]
+	\[ 1-2^{1-2/b} = 0 \]
+	\[ 1 = 2^{1-2/b} \]
+	\[ 2^0 = 2^{1-2/b} \]
+	\[ 0 = 1-2/b \]
+	\[ b=2 \qquad \sigma = \frac{1}{b} = \frac{1}{2} \]
+	
+	\[ \text{Q.E.D.} \]
+	
+	
+	
+	
+\end{document}
