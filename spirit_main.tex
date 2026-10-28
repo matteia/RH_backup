@@ -116,7 +116,7 @@
 	\[ \eta(s) = \lim_{n \to \infty} \eta_{n}(s) = \lim_{n \to \infty} \sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}  \]
 	
 	\[ D_s = \frac{\eta(s)}{\zeta(s)} = \frac{\lim\limits_{n \to \infty} \eta_{n}(s)}{\lim\limits_{n \to \infty} \zeta_{n}(s)} = \frac{\lim\limits_{n \to \infty} \sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}}{\lim\limits_{n \to \infty} \sum\limits_{k=1}^{n} \frac{1}{k^s}} \]
-	\[= \lim\limits_{n \to \infty} \frac{\sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}}{\sum\limits_{k=1}^{n} \frac{1}{k^s}} = \lim\limits_{n \to \infty}F_{s} \]
+	\[= \lim\limits_{n \to \infty} \frac{\sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}}{\sum\limits_{k=1}^{n} \frac{1}{k^s}} = \lim\limits_{n \to \infty}D(s) \]
 	
 	
 	\subsection{Expressing $\zeta(s)$ and its summands}
@@ -906,7 +906,7 @@
 	Recall that $\zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{2/b}} = -2(\alpha_{\eta(s)} + \beta_{\eta(s)}) $. For the purpose of performing analytic continuation when $\zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)})$ because of divergence given any $b$ in $0 < \frac{1}{b} < 1$ or $1 < b < \infty$, we assumed that $\frac{2}{b} \leq 1$ in addition to the initially defined conditions, yielding a new range of $b$ where $b \geq 2$. When given this new range, $\alpha_{\eta(s)} + \beta_{\eta(s)}$ diverges as well as $l {\cdot} (\alpha_{\eta(s)} + \beta_{\eta(s)})$ where $l \in \mathbb{R}_{\neq 0}$.
 	\\
 	
-	In order to find how the newly established relationship between  $\zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{2/b}}$ and $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ holds true, we look at $\eta(\frac{2}{b})$ and $D_{2/b}$. For $0 < \frac{2}{b} \leq 1$, $\eta(\frac{2}{b})$ always converges. This means that $D_{2/b}$ plays a crucial part in matching the divergence of $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$. The only way that it can make a convergent value or series diverge is if $D_{2/b} {=} \lim\limits_{n \to \infty}F_{2/b} {=} 0$. Below, we may see that zero is within the possible range of $D_{2/b}$.
+	In order to find how the newly established relationship between  $\zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{2/b}}$ and $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ holds true, we look at $\eta(\frac{2}{b})$ and $D_{2/b}$. For $0 < \frac{2}{b} \leq 1$, $\eta(\frac{2}{b})$ always converges. This means that $D_{2/b}$ plays a crucial part in matching the divergence of $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$. The only way that it can make a convergent value or series diverge is if $D_{2/b} {=} \lim\limits_{n \to \infty}D(\frac{2}{b}) {=} 0$. Below, we may see that zero is within the possible range of $D_{2/b}$.
 	
 	\[ 0 < \frac{2}{b} < 1 \]
 	
@@ -927,10 +927,10 @@
 	\[\]
 	\[ \frac{\eta( \frac{2}{b} )}{D_{\frac{2}{b}}} = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \Rightarrow \frac{converge}{D_{\frac{2}{b}}} = - 2 \cdot diverge \]
 	
-	\[ = \frac{converge}{\lim\limits_{n \to \infty}F_{2/b}} = - 2 \cdot diverge \]
+	\[ = \frac{converge}{\lim\limits_{n \to \infty}D(\frac{2}{b})} = - 2 \cdot diverge \]
 	
 	
-	\[ \Rightarrow D_{2/b} = \lim\limits_{n \to \infty}F_{2/b} = 0 \]
+	\[ \Rightarrow D_{2/b} = \lim\limits_{n \to \infty}D \Bigl( \frac{2}{b} \Bigr) = 0 \]
 	
 	\[ \Rightarrow 1-2^{1-2/b} = 0 \]
 	
