@@ -763,8 +763,9 @@
 	
 	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \Big(\frac{1}{1}\Big)^{\frac{1}{b}}A_1 + \Big(\frac{1}{2}\Big)^{\frac{1}{b}}A_2 + \Big(\frac{1}{3}\Big)^{\frac{1}{b}}A_3 + \dots + \Big(\frac{1}{m}\Big)^{\frac{1}{b}}A_m \]
 	
-	\[ F_m = \sum\limits_{k=1}^{\infty} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
-	\[ A_m = F_m - \sum\limits_{k=1}^{m} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	% \[ F_m = \sum\limits_{k=1}^{\infty} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} {\cdot} (-1)^{m-1} \]
+	\[ F_m = \Bigl( \sum\limits_{k=1}^{\infty} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}}  \Bigr) {\cdot} (-1)^{m-1} \]
+	\[ A_m = F_m - \Bigl( \sum\limits_{k=1}^{m} \frac{(-1)^{k-1} {\cdot} \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} \Bigr) {\cdot} (-1)^{m-1} \]
 	\[\]
 	
 	$F_m$ and $A_m$ can be expressed in Dirichlet eta function.
@@ -879,7 +880,7 @@
 	
 	\[ \Rightarrow A_m = - Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg) {\cdot} (-1)^{m-1} \]
 	\\
-	The term $Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg)$ is the first summand of the original branch $A_m$ as $ Re\Bigg(m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^s} \Bigg) = \frac{\cos(c \ln \frac{m}{k}){\cdot}(-1)^{k-1}}{(k)^{\frac{1}{b}}} $ where $k = m+1$. 
+	The term $Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m-1}}{(m+1)^s}\Big) \Bigg)$ is the first summand of the original branch $A_m$ as $ Re\Bigg(m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^s} \Bigg) = \frac{\cos(c \ln \frac{m}{k}){\cdot}(-1)^{k-1}}{k^{\frac{1}{b}}} $ where $k = m+1$. 
 	
 	\[ Re\Bigg(m^{ci} {\cdot} \Big(-\frac{(-1)^{m}}{(m+1)^s}\Big) \Bigg) = \frac{-\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{m+1-1}}{(m+1)^{\frac{1}{b}}}  \]
 	\[= \frac{\cos(c \ln \frac{m}{m+1}){\cdot}(-1)^{m-1}}{(m+1)^{\frac{1}{b}}} \]
