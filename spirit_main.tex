@@ -34,8 +34,8 @@
 	
 	The terms before expansion is the reason we simply equate one pair of coordinates to another. If all terms involved were real numbers, the squares of differences, namely $(X-p)^2$ and $(Y-q)^2$, would individually be equal to or above zero. The only way the result becomes zero is when both of the differences are zero.
 	
-	\[ X-p=0 \Rightarrow X=p  \]
-	\[ Y-q=0 \Rightarrow Y=q  \]
+	\[ X-p=0 \qquad \Rightarrow \qquad X=p  \]
+	\[ Y-q=0 \qquad \Rightarrow \qquad Y=q  \]
 	
 	However, as we have already established that this is not the case, we must consider other possibilities. Even when some series diverge on their own, when combined through addition or subtraction, they may converge. Moreover, the self-Cauchy products of divergent series may yield sequences that cancel out others when together, leading to convergence. For this, we expand $z\Omega$.
 	
@@ -59,16 +59,18 @@
 	We may define the functions Riemann zeta and the Dirichlet eta as below where $ k \in \mathbb{N} $.
 	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + {\dots} + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{1}{k^s} \]
 	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + ... \pm \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \qquad k \in \mathbb{N} \]
-	Let $s$ be a complex number within the critical strip, a non-trivial zero of the Riemann zeta function expressed in real numbers $b$ and $c$  ($b,c \in \mathbb{R}$).
-	\[ s = \sigma + ci = \frac{1}{b} + ci \qquad s \in \mathbb{C}, \, c \neq 0 \]
+	Let $s$ be a complex number within the critical strip, a non-trivial zero of the Riemann zeta function expressed in real numbers $b$ and $c$.
+	\[ s \in \mathbb{C}, \qquad s = \sigma + ci = \frac{1}{b} + ci \]
+	\[ b,c \in \mathbb{R}, \qquad c \neq 0 \]
 	\[ 0 < \sigma < 1 \quad \Rightarrow \quad 0 < \frac{1}{b} < 1 \quad \text{or} \quad 1<b<\infty \]
+	\[\]	
 	
-	
-	\[ \zeta(s) = \frac{\eta(s)}{D_s} \quad \text{or} \quad D_s\zeta(s) = \eta(s) \]
 	\subsection{The denominator $D$ for analytic continuation given s}
 	The term $D_s$ enables analytic continuation between the $\zeta(s)$ and $\eta(s)$, and may be expressed as a complex number. It is important to know how its real part $v$ and imaginary part $w$ behave as we continue having to arrange various equations including them.
+	\[ \zeta(s) = \frac{\eta(s)}{D_s} \quad \text{or} \quad D_s\zeta(s) = \eta(s) \]
 	\[ D_{s} = 1-2^{1-s} = v + wi \]
-	\[ \bar{D}_{s} = v - wi  \qquad v,w \in \mathbb{R} \]
+	\[ \bar{D}_{s} = v - wi,  \qquad v,w \in \mathbb{R} \]
+	\[\]
 	
 	\subsubsection{Range of $v^2+w^2$}
 	Let $1 - \sigma = t$ to observe the properties of real numbers $v$ and $w$.
@@ -108,6 +110,7 @@
 	\[ \therefore v \neq 0 \]
 	\[\]
 	Therefore, we can deduce that $v^2 + w^2 \neq 0$ and that $v^2 + w^2 > 0$.
+	\[\]
 	
 	\subsubsection{$D_s$ as a limit function of s}
 	Despite the fact $D_{s} = 1-2^{1-s}$, it may be more than a complex number. It is a limit function of $s$. The terms $1-2^{1-s}$ are derived from the relationship between functions Riemann zeta and Dirichlet eta. Regardless of convergence or divergence, the concept or usage of a limit function is implied in each series. Therefore, even when $D_s$ can be expressed as $1-2^{1-s}$ or $v+wi$, its inherent property of being one should be remembered and utilised.
@@ -117,7 +120,7 @@
 	
 	\[ D_s = \frac{\eta(s)}{\zeta(s)} = \frac{\lim\limits_{n \to \infty} \eta_{n}(s)}{\lim\limits_{n \to \infty} \zeta_{n}(s)} = \frac{\lim\limits_{n \to \infty} \sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}}{\lim\limits_{n \to \infty} \sum\limits_{k=1}^{n} \frac{1}{k^s}} \]
 	\[= \lim\limits_{n \to \infty} \frac{\sum\limits_{k=1}^{n}\frac{(-1)^{k-1}}{k^s}}{\sum\limits_{k=1}^{n} \frac{1}{k^s}} = \lim\limits_{n \to \infty}D(s) \]
-	
+	\[\]
 	
 	\subsection{Expressing $\zeta(s)$ and its summands}
 	Each term of the series from $\zeta(s)$ can be expressed in $b$ and $c$.
@@ -315,9 +318,9 @@
 	
 	\[\]
 	As a result, the fact that $X_{\zeta(s)}^2 + Y_{\zeta(s)}^2 = 0$ leads to the formation of $\zeta(\frac{2}{b})$.
-	\[ X^2_{\zeta(s)} + Y^2_{\zeta(s)} = \sum\limits_{k=1}^{\infty}\frac{1}{k^{\frac{2}{b}}} + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = \zeta(\frac{2}{b}) + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = 0 \]
+	\[ X^2_{\zeta(s)} + Y^2_{\zeta(s)} = \sum\limits_{k=1}^{\infty}\frac{1}{k^{\frac{2}{b}}} + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = \zeta\Bigl( \frac{2}{b} \Bigr) + 2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) = 0 \]
 	
-	\[ \zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) \]
+	\[ \zeta\Bigl( \frac{2}{b} \Bigr) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)}) \]
 	
 	\subsection{Divergence of $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$}
 	In order to study the nature of $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$, it should be rearranged in a format that gives better insight.
@@ -393,7 +396,7 @@
 	\[ \qquad\qquad \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Bigr) \]
 	
 	\[\]
-	Then we may utilise that fact that $ \cos{A} \cdot \cos{B} = \cos{(A-B)} - \sin{A}\sin{B} $ to cancel out all the sine terms.
+	Then we may utilise the fact that $ \cos{A} \cdot \cos{B} = \cos{(A-B)} - \sin{A}\sin{B} $ to cancel out all the sine terms.
 	
 	\[
 	\begin{aligned}
@@ -514,7 +517,7 @@
 	
 	The reorganised $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ can be viewed as a collection of nodes and branches where each node is the outer coefficient in the form of $\frac{1}{m}^{\frac{1}{b}}$ where $m \in \mathbb{N}$ and each branch is a series of cosine terms with their own inner coefficients. Neither the nodes nor the branches converge. The nodes form a series that would be defined as $\zeta(\frac{1}{b})$ and given that $0 < \frac{1}{b} < 1$, this series diverges. The branches, where each one is a sequence of cosine values multiplied by summands from a subseries of $\zeta(\frac{1}{b})$ diverge. The cosine values as numerators oscillate between -1 and 1, at an increasingly slower rate as $k$ per branch tends to infinity, including both bounds. The terms from $\zeta(\frac{1}{b})$ within every branch act as denominators when multiplied and do not diminish at a sufficient rate to cause each branch to converge. As a result, each node-branch product will diverge, rendering the entire series, a nested loop of Dirichlet series, into divergence. If $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ diverges, $l {\cdot} (\alpha_{\zeta(s)} + \beta_{\zeta(s)})$ diverges where $l \in \mathbb{R}_{\neq 0}$. This means that $\zeta(\frac{2}{b})$ diverges as $\zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)})$. 
 	
-	\[ \zeta(\frac{2}{b}) \quad \text{DNE} \qquad (0 < \frac{1}{b} < 1) \]
+	\[ \zeta\Bigl( \frac{2}{b} \Bigr) \quad \text{DNE} \qquad (0 < \frac{1}{b} < 1) \]
 	
 	
 	\section{Analytically continued $\zeta(\frac{2}{b})$}
@@ -561,10 +564,10 @@
 	
 	\subsection{The new $Z\Omega$}
 	The distance between the same arbitrary point $\Omega(p, q)$ and the new $Z$ will be calculated to further observe properties of $G$ and $H$.
-	\[ Z\Omega = \sqrt{(\frac{vG+wH}{v^2+w^2}-p)^2 + (\frac{-wG+vH}{v^2+w^2}-q)^2} \]
+	\[ Z\Omega = \sqrt{\Bigl( \frac{vG+wH}{v^2+w^2}-p \Bigr)^2 + \Bigl( \frac{-wG+vH}{v^2+w^2}-q \Bigr)^2} \]
 	\[\]
 	$ \text{If} \quad Z\Omega = 0, $
-	\[ Z\Omega = \sqrt{(\frac{vG+wH}{v^2+w^2}-p)^2 + (\frac{-wG+vH}{v^2+w^2}-q)^2} = 0 \]
+	\[ Z\Omega = \sqrt{\Bigl( \frac{vG+wH}{v^2+w^2}-p \Bigr)^2 + \Bigl( \frac{-wG+vH}{v^2+w^2}-q \Bigr)^2} = 0 \]
 	
 	\[ = \sqrt{  (\frac{vG{+}wH}{v^2{+}w^2})^2 {+} p^2 {-} 2p(\frac{vG{+}wH}{v^2{+}w^2}) {+} (\frac{-wG{+}vH}{v^2{+}w^2})^2 {+} q^2 {-}2q(\frac{-wG{+}vH}{v^2{+}w^2}) } = 0 \]
 	\[\]
@@ -901,7 +904,7 @@
 	
 	\[ -2 < -2^{1-2/b} \leq -1 \]
 	
-	\[ 1-2 < 1-2^{1-2/b} \leq 1-1 \Rightarrow -1 < 1-2^{1-2/b} \leq 0  \] 
+	\[ 1-2 < 1-2^{1-2/b} \leq 1-1 \quad \Rightarrow \quad -1 < 1-2^{1-2/b} \leq 0  \] 
 	
 	\[\Rightarrow -1 < D_{2/b} \leq 0  \] 
 	\\
