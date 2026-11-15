@@ -21,7 +21,7 @@
 	\end{abstract}
 	
 	\section{Introduction}
-	Given any $s$ where $s \in \mathbb{C}$ and $0<Re(s)<1$, the series yielded by the Riemann zeta function does not converge unless via analytic continuation. This means that if $\zeta(s) = z = X+Yi$, $X$ and $Y$ do not have fixed numerical values. In such a case, whether or not $z(X,Y)$ and another point $\Omega(p,q)$, where $p,q \in \mathbb{R}$, occupy the same coordinates on an XY plane cannot be determined by simply equating one to the other. The equation when doing so produces false statements as neither $X-p$ nor $Y-q$ can equate to zero, let alone any other real number.
+	Given a complex number $s$ where $0<Re(s)<1$, the series yielded by the Riemann zeta function does not converge unless via analytic continuation. This means that if $\zeta(s) = z = X+Yi$, $X$ and $Y$ do not have fixed numerical values. In such a case, whether or not $z(X,Y)$ and another point $\Omega(p,q)$, where $p,q \in \mathbb{R}$, occupy the same coordinates on an XY plane cannot be determined by simply equating one to the other. The equation when doing so produces false statements as neither $X-p$ nor $Y-q$ can equate to zero, let alone any other real number.
 	
 	\[ z(X,Y) = \Omega(p,q) \quad \Rightarrow \quad X=p, Y=q \]
 	% \[ X-p \neq 0, Y -q \neq 0 \qquad\qquad (\because \, X = \text{DNE}, \quad Y = \text{DNE}) \]
@@ -51,18 +51,19 @@
 	
 	This implies that we are making $\Omega$ origin $O(0,0)$. Subsequently, this means that $z(X,Y)$ equals or converges to the origin, a paradox when considering what was initially stated for X and Y. This is where analytic continuation steps in when the concept discussed in this paper is applied to the Riemann zeta function and its non-trivial zeros.
 	
-	In the sections that follow, by computing the Euclidean distance in a 2D Cartesian coordinate system, we will observe the characteristics of resulting terms. This will help us understand values from $\zeta(s)$ where $s = \frac{1}{b} + ci$ and properties of $\zeta(\frac{2}{b})$.
+	In the sections that follow, by computing the Euclidean distance in a 2D Cartesian coordinate system, we will observe the characteristics of resulting terms. This will help us understand values from $\zeta(s)$ and properties of $\zeta(\frac{2}{b})$ where $s = \frac{1}{b} + ci$, a non-trivial zero.
 	\[\]
 	
 	\section{Definition}
 	\subsection{The Riemann zeta and Dirichlet eta}
-	We may define the functions Riemann zeta and the Dirichlet eta as below where $ k \in \mathbb{N} $.
+	We may define the functions Riemann zeta and the Dirichlet eta as below where $ k \in \mathbb{N}_{\geq 1} $.
 	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + {\dots} + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{1}{k^s} \]
-	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + ... \pm \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \qquad k \in \mathbb{N} \]
+	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + ... \pm \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \qquad k \in \mathbb{N}_{\geq 1} \]
 	Let $s$ be a complex number within the critical strip, a non-trivial zero of the Riemann zeta function expressed in real numbers $b$ and $c$.
 	\[ s \in \mathbb{C}, \qquad s = \sigma + ci = \frac{1}{b} + ci \]
 	\[ b,c \in \mathbb{R}, \qquad c \neq 0 \]
 	\[ 0 < \sigma < 1 \quad \Rightarrow \quad 0 < \frac{1}{b} < 1 \quad \text{or} \quad 1<b<\infty \]
+	\[ \zeta(s) = \frac{\eta(s)}{1-s^{1-s}} = 0 \]
 	\[\]	
 	
 	\subsection{The denominator $D$ for analytic continuation given s}
@@ -142,7 +143,7 @@
 	\[ z (X, Y) \]
 	\[\]
 	Where $k \to \infty$, $X$ and $Y$ are the sums of $x_k$ and $y_k$, respectively, and every term including a cosine value becomes $x_k$ whereas every term with a sine value becomes $y_k$. 
-	\[ X = \sum\limits_{k=1}^{\infty}x^k = Re(\zeta(s)) \, , \quad Y = \sum\limits_{k=1}^{\infty}y^k = Im(\zeta(s)) \]
+	\[ X = \sum\limits_{k=1}^{\infty}x_{k} = Re(\zeta(s)) \, , \quad Y = \sum\limits_{k=1}^{\infty}y_{k} = Im(\zeta(s)) \]
 	\[\]
 	\[ x_k = \frac{\cos({c\ln k})}{\sqrt[b]{k}} = \frac{\cos(-{c\ln k})}{\sqrt[b]{k}} = \frac{\cos({c\ln k^{-1}})}{\sqrt[b]{k}} = \frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
 	\[ y_k = \frac{-\sin({c\ln k})}{\sqrt[b]{k}} = \frac{\sin({-c\ln k})}{\sqrt[b]{k}} = \frac{\sin({c\ln k^{-1}})}{\sqrt[b]{k}} = \frac{\sin({c\ln \frac1k })}{\sqrt[b]{k}} \]
@@ -160,7 +161,7 @@
 	\[ = (vX - wY) + (wX + vY)i = Z \]
 	\[ Z = (vX - wY) + (wX + vY)i \]
 	\[ \text{or} \]
-	\[ Z \Bigl( (vX - wY), (wX + vY) \Bigr) \]
+	\[ Z \Bigl( vX - wY, wX + vY \Bigr) \]
 	
 	\subsection{The Euclidean distance}
 	Let the target point $\Omega$ be a point with coordinates $(p,q)$ in a 2D Cartesian coordinate system.
@@ -171,7 +172,7 @@
 	If the distance is equal to zero, implying that the two points occupy the same coordinates, this can be expanded as follows.
 	\[ Z\Omega = \sqrt{\{(vX-wY)-p\}^2 + \{(wX+vY)-q\}^2} = 0 \]
 	\[ = \sqrt{\{ (vX-wY)^2 {+} p^2 -2p(vX-wY) \} {+} \{ (wX{+}vY)^2 {+} q^2 {+} 2q(wX{+}vY) \}} = 0 \]
-	We can also imply that $\eta(s)=Z$ equals or converges to zero by moving point $\Omega$ to the origin$(0,0)$ if we let $p=0$ and $q=0$.
+	We can also imply that $\eta(s)$ converges to zero by moving point $\Omega$ to the origin$(0,0)$ if we let $p=0$ and $q=0$.
 	\[ Z\Omega = \sqrt{\{ (vX-wY)^2 {+} 0^2 -2 \cdot 0 (vX-wY) \} {+} \{ (wX{+}vY)^2 {+} 0^2 {+} 2 \cdot 0 (wX{+}vY) \}} \]
 	\[ = \sqrt{(vX-wY)^2 {+} (wX{+}vY)^2} = 0 \]
 	
@@ -200,8 +201,8 @@
 	\[ X_{\zeta(s)} = \sum\limits_{k=1}^{\infty}x_k = \sum\limits_{k=1}^{\infty}\frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}}, \qquad Y_{\zeta(s)} = \sum\limits_{k=1}^{\infty}y_k = \sum\limits_{k=1}^{\infty}\frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
 	
 	\subsection{The self-Cauchy products of X and Y}
-	By definition and given all the conditions, especially $1<b<\infty$, $X_{\zeta(s)}$ and $Y_{\zeta(s)}$ diverge and therefore cannot be zero. However, $X_{\zeta(s)}^2+Y_{\zeta(s)}^2$ converges as it equals zero.
-	\[ X_{\zeta(s)} \neq 0, \qquad Y_{\zeta(s)} \neq 0 \qquad\qquad (\because X_{\zeta(s)}, Y_{\zeta(s)} = \text{DNE}) \]
+	By definition and given all the conditions, especially $0 < \frac{1}{b} < 1$, $X_{\zeta(s)}$ and $Y_{\zeta(s)}$ diverge and therefore cannot be zero. However, $X_{\zeta(s)}^2+Y_{\zeta(s)}^2$ converges as it equals zero.
+	\[ X_{\zeta(s)} \neq 0, \qquad Y_{\zeta(s)} \neq 0 \qquad\qquad ( \because X_{\zeta(s)}, Y_{\zeta(s)} \quad \text{DNE} ) \]
 	\[ X_{\zeta(s)}^2+Y_{\zeta(s)}^2 = 0 \]
 	
 	Observe the two different Cauchy products, namely $X_{\zeta(s)}^2$ and $Y_{\zeta(s)}^2$ while we let $k \to \infty$.
@@ -364,7 +365,7 @@
 	\end{aligned}
 	\]
 	
-	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \]
+	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) +  \]
 	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \]
 	
 	\[\]
@@ -524,11 +525,11 @@
 	\subsection{Additional analytical continuation}
 	Although $\zeta(\frac{2}{b})$ and $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ diverge, it is premature to assume that $b=2$ in an attempt to claim that $\zeta(\frac{2}{b})$ is the single pole, $\zeta(1)$. Since the Riemann zeta function, without analytic continuation, diverges when $Re(s) \leq 1$, the divergent property of the equation $\zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)})$ may simply indicate that $\frac{2}{b} \leq 1$. This is within the initially defined range of $\frac{1}{b}$ as $0 < \frac{1}{b} < 1$ or $0 < \frac{2}{b} < 2$.
 	
-	Analytic continuation of $\zeta(\frac{2}{b})$, eventually expressed as $\frac{\eta(\frac{2}{b})}{D_{2/b}}$, may help us understand more about $\zeta(\frac{2}{b})$, $\frac{\eta(\frac{2}{b})}{D_{2/b}}$ and another variant of $\alpha + \beta$. However, simply dividing both sides by $D_{2/b} = 1 - 2^{1-\frac{2}{b}}$ does not produce the appropriate results as $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ originates from a naïve form of Riemann zeta function given $s$. In order to obtain its analytically continued version, $\alpha_{\eta(s)} + \beta_{\eta(s)}$, a similar set of processes adopting the same concepts of Cartesian coordinate system and Euclidean distance have to be executed.
+	Analytic continuation of $\zeta(\frac{2}{b})$, eventually expressed as $\frac{\eta(\frac{2}{b})}{D_{2/b}}$, may help us understand more about them and another variant of $\alpha + \beta$. However, simply dividing both sides by $D_{2/b}$ does not produce the appropriate results as $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ originates from a naïve form of Riemann zeta function given $s$. In order to obtain its analytically continued version, $\alpha_{\eta(s)} + \beta_{\eta(s)}$, a similar set of processes adopting the same concepts of Cartesian coordinate system and Euclidean distance have to be executed.
 	
 	\subsection{Expressing $\eta(s)$ and its summands}
 	Instead of $\zeta(s)$, $\eta(s)$ will be the new main focus. In similar fashion, each term of the series from $\eta(s)$ can be expressed in $b$ and $c$.
-	\[ \frac{(-1)^{k-1}}{k^s} = \frac{(-1)^{k-1}}{k^{\frac{1}{b} + ci}} = \frac{\cos({c\ln k})(-1)^{k-1}}{\sqrt[b]{k}} + \frac{-\sin({c\ln k})(-1)^{k-1}}{\sqrt[b]{k}} i \]
+	\[ \frac{(-1)^{k-1}}{k^s} = \frac{(-1)^{k-1}}{k^{\frac{1}{b} + ci}} = \frac{(-1)^{k-1} \cdot \cos({c\ln k})}{\sqrt[b]{k}} + \frac{-(-1)^{k-1} \cdot \sin({c\ln k})}{\sqrt[b]{k}} i \]
 	Then, a new $z$ can be set to equal $\eta(s) = G + Hi$. Here, $z$ may again be a point on an XY plane.
 	\[ \eta(s) \qquad = \qquad +\frac{1}{1^s} \qquad \Big|\Big|  \qquad +\frac{\cos({c\ln 1})}{\sqrt[b]{1}} \qquad +\frac{-\sin({c\ln 1})}{\sqrt[b]{1}} \quad i  \]
 	
@@ -538,7 +539,7 @@
 	
 	\[ \vdots \]
 	
-	\[ \qquad  \quad +\frac{(-1)^{k-1}}{k^s} \qquad \Big|\Big|  \qquad \frac{\cos({c\ln k}){\cdot(-1)^{k-1}}}{\sqrt[b]{k}} \qquad \frac{{-}\sin({c\ln k}){\cdot({-}1)^{k-1}}}{\sqrt[b]{k}} \quad i  \]
+	\[ \qquad  \quad +\frac{(-1)^{k-1}}{k^s} \qquad \Big|\Big|  \qquad \frac{(-1)^{k-1} \cdot \cos({c\ln k})}{\sqrt[b]{k}} \qquad \frac{{-}(-1)^{k-1} \cdot \sin({c\ln k})}{\sqrt[b]{k}} \quad i  \]
 	
 	\[\quad \rule{12 cm}{.8pt} \quad \]
 	\[ \qquad \qquad \qquad z \qquad\qquad =  \qquad\qquad G \qquad + \qquad H \quad i \qquad\qquad \]
@@ -548,10 +549,10 @@
 	\[\]
 	
 	If $G$ and $H$ are series of $g_k$ and $h_k$, respectively, we may reuse $x_k$ and $y_k$ to express these new terms.
-	\[ G = Re(\eta(s)) = \sum\limits_{k=1}^{\infty}g^k, \quad g_k = (-1)^{k-1} \cdot x_k \]
-	\[ H = Im(\eta(s)) = \sum\limits_{k=1}^{\infty}h^k, \quad h_k = (-1)^{k-1} \cdot y_k \]
+	\[ G = Re(\eta(s)) = \sum\limits_{k=1}^{\infty}g_{k}, \quad g_k = (-1)^{k-1} \cdot x_k \]
+	\[ H = Im(\eta(s)) = \sum\limits_{k=1}^{\infty}h_{k}, \quad h_k = (-1)^{k-1} \cdot y_k \]
 	
-	Now $\zeta(s)$ may be expressed in terms of $G$ and $H$ to obtain the a $Z$.
+	Now $\zeta(s)$ may be expressed in terms of $G$ and $H$ to obtain the new $Z$.
 	\[ \zeta(s) = \frac{\eta(s)}{D_{s}} = \frac{G + Hi}{1-2^{1-s}} = \frac{(G+Hi)(v-wi)}{(v+wi)(v-wi)} \]
 	
 	\[ = \frac{vG-wGi+vHi-wHi^2}{v^2+w^2} = \frac{(vG+wH)+(-wG+vH)i}{v^2+w^2} \]
@@ -586,7 +587,7 @@
 	\[ = \frac{(v^2+w^2)G^2 + (v^2+w^2)H^2}{(v^2+w^2)^2} \]
 	\[ = \frac{(v^2+w^2)(G^2 + H^2)}{(v^2+w^2)^2} = 0 \]
 	
-	\[ = (v^2+w^2)(G^2 + H^2) = 0 \]
+	\[ \Rightarrow (v^2+w^2)(G^2 + H^2) = 0 \]
 	
 	\[ \Rightarrow G^2 + H^2 = 0 \quad (\because v, w \in \mathbb{R}, \quad v^2 + w^2 > 0)  \]
 	
@@ -594,9 +595,9 @@
 	\subsection{Cross terms of $\eta(s)$}
 	Now that even for $G$ and $H$, $G^2 + H^2 = 0$ is established, let subscripts $\eta(s)$ denote that such terms are associated to the result of the Dirichlet eta function given $s$ where $s=\frac{1}{b}+ci$.
 	
-	\[ \eta(s) = \eta(\frac{1}{b}+ci) := G_{\eta(s)}+H_{\eta(s)}i \]
+	\[ \eta(s) = \eta\Bigl( \frac{1}{b}+ci \Bigr) := G_{\eta(s)}+H_{\eta(s)}i \]
 	
-	The two self-Cauchy products of $G_{\eta(s)}^2$ and $H_{\eta(s)}^2$ can be expanded and rearranged, similar to how $X_{\zeta(s)}^2$ and $Y_{\zeta(s)}^2$ were processed.
+	The two self-Cauchy products of $G_{\eta(s)}^2$ and $H_{\eta(s)}^2$ can be expanded and rearranged, similar to how $X_{\zeta(s)}^2$ and $Y_{\zeta(s)}^2$ were processed, but with alternating signs in certain places.
 	
 	\[ \begin{array}{c}
 		G_{\eta(s)}^2 = (g_1 {+} g_2 {+} g_3 {+} \dots {+} g_k)^2 = (g_1^2 {+} g_2^2 {+} g_3^2 {+} \dots {+} g_k^2) \\
@@ -708,11 +709,11 @@
 	\[ G_{\eta(s)}^2 + H_{\eta(s)}^2 = \sum\limits_{k=1}^{\infty}x_k^2 + 2\alpha_{\eta(s)} + \sum\limits_{k=1}^{\infty}y_k^2 + 2\beta_{\eta(s)} \]
 	\[ G_{\eta(s)}^2 + H_{\eta(s)}^2 = \sum\limits_{k=1}^{\infty}(x_k^2 + y_k^2) + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
 	\[ = \sum\limits_{k=1}^{\infty}\frac{1}{k^{\frac{2}{b}}} + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
-	\[ = \zeta(\frac{2}{b}) + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) = 0 \]
-	\[ \zeta(\frac{2}{b}) = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
+	\[ = \zeta\Bigl( \frac{2}{b} \Bigr) + 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) = 0 \]
+	\[ \zeta\Bigl( \frac{2}{b} \Bigr) = - 2(\alpha_{\eta(s)} + \beta_{\eta(s)}) \]
 	
 	Since $\alpha_{\eta(s)} + \beta_{\eta(s)}$ is the analytically continued version of $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$, $\zeta(s)$ may now be expressed as $\frac{\eta( \frac{2}{b} )}{D_{2/b}}$ where $D_{2/b} = 1 - 2^{1-{2/b}}$.
-	\[ \zeta(\frac{2}{b}) = \frac{\eta( \frac{2}{b} )}{D_{2/b}} \]
+	\[ \zeta\Bigl( \frac{2}{b} \Bigr) = \frac{\eta( \frac{2}{b} )}{D_{2/b}} \]
 	
 	\section{Convergence and Divergence of $\alpha_{\eta(s)} + \beta_{\eta(s)}$}
 	\subsection{Comparing $\alpha_{\eta(s)} + \beta_{\eta(s)}$ to $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$}
@@ -762,7 +763,7 @@
 	
 	
 	\subsection{Evaluating the inner Dirichlet series}
-	$\alpha_{\eta(s)} + \beta_{\eta(s)}$ is also a nested Dirichlet series. The nodes follow the same pattern from the Riemann zeta function in the form of $\frac{1}{m^{\frac{1}{b}}}$ similar to the nodes in $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$. This means that whether or not $\alpha_{\eta(s)} + \beta_{\eta(s)}$ converges depends on the convergences of branches, the inner Dirichlet series. Every branch is part of a full Dirichlet series with alternating polarity for the summands. With $0 < \frac{1}{b} < 1$ from the initial conditions and along with the newly supposed constraint from the previous iteration of analytic continuation, where $0 < \frac{2}{b} < 1$, every branch will converge. We will denote every branch as $A_m$ and every full Dirichlet series that a branch originates from as $F_m$, where $m \in \mathbb{N}$ and $m \to \infty$, in order to approximate $A_m$.
+	Just as $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$, $\alpha_{\eta(s)} + \beta_{\eta(s)}$ is also a nested Dirichlet series. The nodes follow the same pattern from the Riemann zeta function in the form of $\frac{1}{m^{\frac{1}{b}}}$ similar to the nodes in $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$. This means that whether or not $\alpha_{\eta(s)} + \beta_{\eta(s)}$ converges depends on the branches, the inner Dirichlet series. Every branch is part of a full Dirichlet series with alternating polarity for the summands. With $0 < \frac{1}{b} < 1$ from the initial conditions and along with the newly supposed constraint from the previous iteration of analytic continuation, where $0 < \frac{2}{b} < 1$, every branch will converge. We will denote every branch as $A_m$ and every full Dirichlet series that a branch originates from as $F_m$, where $m \in \mathbb{N}_{\geq 1}$ and $m \to \infty$, in order to approximate $A_m$.
 	
 	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \Big(\frac{1}{1}\Big)^{\frac{1}{b}}A_1 + \Big(\frac{1}{2}\Big)^{\frac{1}{b}}A_2 + \Big(\frac{1}{3}\Big)^{\frac{1}{b}}A_3 + \dots + \Big(\frac{1}{m}\Big)^{\frac{1}{b}}A_m \]
 	
@@ -780,7 +781,7 @@
 	
 	\[ = \frac{m^{ci}k^{-ci} + m^{-ci}k^{ci}}{2} \]
 	
-	\[ \frac{\cos(c \ln \frac{m}{k}) \cdot (-1)^{k-1}}{k^{\frac{1}{b}}} = \frac{ (-1)^{k-1} {\cdot} (m^{ci}k^{-ci} + m^{-ci}k^{ci}) }{2k^{\frac{1}{b}}}  \]
+	\[ \frac{(-1)^{k-1} \cdot \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} = \frac{ (-1)^{k-1} {\cdot} (m^{ci}k^{-ci} + m^{-ci}k^{ci}) }{k^{\frac{1}{b}} \cdot 2}  \]
 	
 	\[ = \frac{1}{2} \Bigl\{ \frac{ (-1)^{k-1}m^{ci}k^{-ci}  }{k^{\frac{1}{b}}} + \frac{ (-1)^{k-1}m^{-ci}k^{ci}  }{k^{\frac{1}{b}}}  \Bigr\} = \frac{m^{ci}}{2} {\cdot} \frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}} + \frac{m^{-ci}}{2} {\cdot} \frac{(-1)^{k-1}}{k^{\frac{1}{b}-ci}} \]
 	
@@ -827,7 +828,7 @@
 	
 	\[ \qquad\qquad\qquad\qquad \frac{ {-}\Big( \cos(c \ln m)\sin(c \ln \frac{1}{k}) {+} \sin(c \ln m)\cos(c \ln \frac{1}{k}) \Big)i \Big\} {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}   \]
 	\[\]
-	\[ \Rightarrow \frac{\cos(c \ln \frac{m}{k}) \cdot (-1)^{k-1}}{k^{\frac{1}{b}}} = \frac{1}{2} \Big( m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^{s}} + m^{-ci} {\cdot} \frac{(-1)^{k-1}}{k^{\bar{s}}}  \Big) \qquad\qquad\qquad\qquad\qquad\qquad \]
+	\[ \Rightarrow \frac{(-1)^{k-1} \cdot \cos(c \ln \frac{m}{k})}{k^{\frac{1}{b}}} = \frac{1}{2} \Big( m^{ci} {\cdot} \frac{(-1)^{k-1}}{k^{s}} + m^{-ci} {\cdot} \frac{(-1)^{k-1}}{k^{\bar{s}}}  \Big) \qquad\qquad\qquad\qquad\qquad\qquad \]
 	
 	\[ = \frac{(-1)^{k-1}}{2} {\cdot} \Biggl\{ \frac{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) }{\sqrt[b]{k}} \qquad\qquad\qquad\qquad \]
 	
@@ -839,7 +840,7 @@
 	\[\]
 	\[ = \frac{(-1)^{k-1}}{2} {\cdot} \Bigg\{ \frac{ 2 \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) }{\sqrt[b]{k}} \Biggr\}  \]
 	\[\]
-	\[ = \frac{ \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) {\cdot} (-1)^{k-1} }{\sqrt[b]{k}}      \]
+	\[ = \frac{ (-1)^{k-1} {\cdot} \Big( \cos(c \ln m)\cos(c \ln \frac{1}{k}) - \sin(c \ln m)\sin(c \ln \frac{1}{k}) \Big) }{\sqrt[b]{k}}      \]
 	\[\]
 	\[ = Re \Big( m^{ci} \cdot \frac{(-1)^{k-1}}{k^{\frac{1}{b}+ci}} \Big) \]
 	\\
@@ -879,7 +880,7 @@
 	
 	\[ = \Biggl( \frac{\cos(c \ln \frac{m}{m+1})}{2(m+1)^{\frac{1}{b}}}  \Biggr) \cdot (-1)^{2m-1} = \frac{-\cos(c \ln \frac{m}{m+1})}{2(m+1)^{\frac{1}{b}}} \]	
 	\\
-	Now $\alpha_{\eta(s)} + \beta_{\eta(s)}$ may be rearranged to determine its convergence.
+	Now $\alpha_{\eta(s)} + \beta_{\eta(s)}$ may be rearranged to determine its convergence. ($m \to \infty$)
 	\[ \alpha_{\eta(s)} + \beta_{\eta(s)} = \Big(\frac{1}{1}\Big)^{\frac{1}{b}}A_1 + \Big(\frac{1}{2}\Big)^{\frac{1}{b}}A_2 + \Big(\frac{1}{3}\Big)^{\frac{1}{b}}A_3 + \dots + \Big(\frac{1}{m}\Big)^{\frac{1}{b}}A_m \]
 	
 	\[ = \frac{-\cos(c \ln \frac{1}{2})}{2(1{\cdot}2)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{2}{3})}{2(2{\cdot}3)^{\frac{1}{b}}} + \frac{-\cos(c \ln \frac{3}{4})}{2(3{\cdot}4)^{\frac{1}{b}}} + \dots + \frac{-\cos(c \ln \frac{m}{m+1})}{2(m^2+m)^{\frac{1}{b}}} \]
@@ -929,6 +930,8 @@
 	\[ \therefore b=2 \ ,  \quad \sigma = \frac{1}{b} = \frac{1}{2} = Re(s) \]
 	\\
 	$\Rightarrow$ The real part of s where the Riemann zeta function converges to a non-trivial zero is always $\frac{1}{2}$. $\qed$
+	\[\]
+	Interestingly, this means that given a non-trivial zero s, $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ gradually becomes equivalent to the harmonic series as $\zeta(\frac2b)$ is $\zeta(1)$.
 	
 	
 \end{document}
