@@ -14,11 +14,12 @@
 \date{20261013}
 
 \begin{document}
-	\maketitle
 	
 	\begin{abstract}
 		The Euclidean distance and Cartesian coordinates are used to show that the real part of a non-trivial zero, $Re(s)$, of the Riemann zeta function is always $\frac12$. If the distance between two points on a 2D plane equals zero, they occupy the same coordinates. Let $z=\zeta(s)=X+Yi$ where $s=\frac{1}{b}+ci$. Through analytic continuation where $D_{s}=1-2^{1-s}=v+wi$ and $D_{s}\zeta(s) = \eta(s)$, we transform $z$ into $Z = (vX-wY) + (wX+vY)i = \eta(s)$. On an XY plane, let $Z=(vX-wY, wX+vY)$ and the target point $\Omega=(p, q)$. If $Z\Omega = 0$ when $\Omega=(0,0)$, it is implied that $\eta(s)=0$. Rearranging the terms leads to $\zeta(\frac{2}{b})$, equivalent to the negative sum of all cross terms in $X^2 + Y^2$ that diverges given $0<\frac{1}{b}<1$. Further analytic continuation yields $\zeta(\frac{2}{b}) = \frac{\eta(2/b)}{D_{2/b}}$ equalling a similar minus sum of cross terms from $G^2 + H^2$ where $\eta(s)= G + Hi$. The latter diverges while $b \geq 2$. Under the initial and additional conditions, $\frac{\eta(2/b)}{D_{2/b}}$ diverges only when $D_{2/b} = 1-2^{1-2/b} = 0$ leading to $b=2$.
 	\end{abstract}
+	
+	\maketitle
 	
 	\section{Introduction}
 	Given a complex number $s$ where $0<Re(s)<1$, the series yielded by the Riemann zeta function does not converge unless via analytic continuation. This means that if $\zeta(s) = z = X+Yi$, $X$ and $Y$ do not have fixed numerical values. In such a case, whether or not $z(X,Y)$ and another point $\Omega(p,q)$, where $p,q \in \mathbb{R}$, occupy the same coordinates on an XY plane cannot be determined by simply equating one to the other. The equation when doing so produces false statements as neither $X-p$ nor $Y-q$ can equate to zero, let alone any other real number.
@@ -56,7 +57,7 @@
 	
 	\section{Definition}
 	\subsection{The Riemann zeta and Dirichlet eta}
-	We may define the functions Riemann zeta and the Dirichlet eta as below where $ k \in \mathbb{N}_{\geq 1} $.
+	We may define the functions Riemann zeta \cite{uberdie_riemann} and the Dirichlet eta as below where $ k \in \mathbb{N}_{\geq 1} $.
 	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + {\dots} + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{1}{k^s} \]
 	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + ... \pm \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \qquad k \in \mathbb{N}_{\geq 1} \]
 	Let $s$ be a complex number within the critical strip, a non-trivial zero of the Riemann zeta function expressed in real numbers $b$ and $c$.
@@ -863,7 +864,7 @@
 	\[ F_m = (-1)^{m-1} \cdot Re(m^{ci} \cdot 0) = 0 \]
 	\[ \Rightarrow F_m = 0 \]
 	
-	$R_m(s)$, the remainder, may be approximated as it asymptotically approaches $\frac{(-1)^{m}}{2(m+1)^s}$ as $m$ becomes sufficiently large enough.
+	By using the Euler-Maclaurin summation or the Euler-Boole summation, the remainder, $R_m(s)$,  may be approximated as it asymptotically approaches $\frac{(-1)^{m}}{2(m+1)^s}$ as $m$ becomes sufficiently large enough. The results of these two methods are interchangeable to a point where they may be unified \cite{yuan_he_unif}. Additionally, the errors are negligible as convergence of $\alpha_{\eta(s)} + \beta_{\eta(s)}$ depends on the exponent of the approximation.
 	
 	\[ R_m \approx \frac{(-1)^{m}}{2(m+1)^s} \]
 	
@@ -934,10 +935,11 @@
 	Interestingly, this means that given a non-trivial zero s, $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ gradually becomes equivalent to the harmonic series as $\zeta(\frac2b)$ is $\zeta(1)$.
 	
 	
-	\begin{thebibliography}{99}
-		
-		
-		
-	\end{thebibliography}
+	
+	%\bibliographystyle{plain}
+	%\bibliographystyle{amsplain}
+	\bibliographystyle{amsalpha}
+	%\bibliographystyle{amsrefs}
+	\bibliography{spirit_main_refs}
 	
 \end{document}
