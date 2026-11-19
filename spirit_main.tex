@@ -4,7 +4,9 @@
 
 \documentclass{amsart}
 \usepackage[T1]{fontenc}
+\usepackage[citation-order]{amsrefs}
 \usepackage{amssymb}
+
 \newtheorem{theorem}[subsection]{Theorem}
 
 \title[RH Euclidean Cartesian]{Proving the Riemann Hypothesis \\
@@ -16,7 +18,7 @@
 \begin{document}
 	
 	\begin{abstract}
-		The Euclidean distance and Cartesian coordinates are used to show that the real part of a non-trivial zero, $Re(s)$, of the Riemann zeta function is always $\frac12$. If the distance between two points on a 2D plane equals zero, they occupy the same coordinates. Let $z=\zeta(s)=X+Yi$ where $s=\frac{1}{b}+ci$. Through analytic continuation where $D_{s}=1-2^{1-s}=v+wi$ and $D_{s}\zeta(s) = \eta(s)$, we transform $z$ into $Z = (vX-wY) + (wX+vY)i = \eta(s)$. On an XY plane, let $Z=(vX-wY, wX+vY)$ and the target point $\Omega=(p, q)$. If $Z\Omega = 0$ when $\Omega=(0,0)$, it is implied that $\eta(s)=0$. Rearranging the terms leads to $\zeta(\frac{2}{b})$, equivalent to the negative sum of all cross terms in $X^2 + Y^2$ that diverges given $0<\frac{1}{b}<1$. Further analytic continuation yields $\zeta(\frac{2}{b}) = \frac{\eta(2/b)}{D_{2/b}}$ equalling a similar minus sum of cross terms from $G^2 + H^2$ where $\eta(s)= G + Hi$. The latter diverges while $b \geq 2$. Under the initial and additional conditions, $\frac{\eta(2/b)}{D_{2/b}}$ diverges only when $D_{2/b} = 1-2^{1-2/b} = 0$ leading to $b=2$.
+		The Euclidean distance and Cartesian coordinates show that the real part of a non-trivial zero, $Re(s)$, of the Riemann zeta function is always $\frac12$. If the distance between two points on a 2D plane equals zero, they occupy the same coordinates. Let $z=\zeta(s)=X+Yi$ where $s=\frac{1}{b}+ci$. Through analytic continuation where $D_{s}=1-2^{1-s}=v+wi$ and $D_{s}\zeta(s) = \eta(s)$, we transform $z$ into $Z = (vX-wY) + (wX+vY)i = \eta(s)$. On an XY plane, let $Z=(vX-wY, wX+vY)$ and the target point $\Omega$ be $(p, q)$. If $Z\Omega = 0$ when $\Omega(0,0)$, it is implied that $\eta(s)=0$. Rearranging the terms yields $\zeta(\frac{2}{b})$, equivalent to negative double the sum of all cross terms in $X^2 + Y^2$ that diverges given $0<\frac{1}{b}<1$. Further analytic continuation yields $\zeta(\frac{2}{b}) = \frac{\eta(2/b)}{D_{2/b}}$ equalling minus double the sum of cross terms from $G^2 + H^2$ where $\eta(s)= G + Hi$. The latter diverges while $b \geq 2$. Under the initial and additional conditions, $\frac{\eta(2/b)}{D_{2/b}}$ diverges only when $D_{2/b} = 1-2^{1-2/b} = 0$ leading to $b=2$.
 	\end{abstract}
 	
 	\maketitle
@@ -38,7 +40,7 @@
 	\[ X-p=0 \qquad \Rightarrow \qquad X=p  \]
 	\[ Y-q=0 \qquad \Rightarrow \qquad Y=q  \]
 	
-	However, as we have already established that this is not the case, we must consider other possibilities. Even when some series diverge on their own, when combined through addition or subtraction, they may converge. Moreover, the self-Cauchy products of divergent series may yield sequences that cancel out others when together, leading to convergence. For this, we expand $z\Omega$.
+	However, as we have already established that this is not the case, we must consider some other possibility a loophole. Even when some series diverge on their own, when combined through addition or subtraction, they may converge. Moreover, the self-Cauchy products of divergent series may yield sequences that cancel out others when together, leading to convergence. For this, we expand $z\Omega$.
 	
 	\[ z\Omega = \sqrt{X^2 - 2pX + p^2 + Y^2 - 2qY + q^2} = 0 \]
 	
@@ -50,14 +52,14 @@
 	
 	\[ = \sqrt{X^2 + Y^2} = 0 \]
 	
-	This implies that we are making $\Omega$ origin $O(0,0)$. Subsequently, this means that $z(X,Y)$ equals or converges to the origin, a paradox when considering what was initially stated for X and Y. This is where analytic continuation steps in when the concept discussed in this paper is applied to the Riemann zeta function and its non-trivial zeros.
+	This implies that we are making the point $\Omega$ origin, $O(0,0)$. Subsequently, this means that $z(X,Y)$ equals or converges to the origin, a paradox when considering what was initially stated for X and Y. This is where analytic continuation steps in when the concept discussed in this paper is applied to the Riemann zeta function and its non-trivial zeros.
 	
-	In the sections that follow, by computing the Euclidean distance in a 2D Cartesian coordinate system, we will observe the characteristics of resulting terms. This will help us understand values from $\zeta(s)$ and properties of $\zeta(\frac{2}{b})$ where $s = \frac{1}{b} + ci$, a non-trivial zero.
+	In the sections that follow, by computing the Euclidean distance in a 2D Cartesian coordinate system, we will observe the characteristics of resulting terms. This will help us understand values from $\zeta(s)$ and properties of $\zeta(\frac{2}{b})$ where $s$ is a non-trivial zero and is interchangeable with $\frac{1}{b} + ci$
 	\[\]
 	
 	\section{Definition}
 	\subsection{The Riemann zeta and Dirichlet eta}
-	We may define the functions Riemann zeta \cite{uberdie_riemann} and the Dirichlet eta as below where $ k \in \mathbb{N}_{\geq 1} $.
+	We may define the functions Riemann zeta \cite{uberdie_riemann}\cite{Bombieri2000ProblemsOT} and the Dirichlet eta as below where $ k \in \mathbb{N}_{\geq 1} $.
 	\[ \zeta(s) := \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + {\dots} + \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{1}{k^s} \]
 	\[ \eta(s) := \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + ... \pm \frac{1}{k^s} = \sum\limits_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^s} \qquad k \in \mathbb{N}_{\geq 1} \]
 	Let $s$ be a complex number within the critical strip, a non-trivial zero of the Riemann zeta function expressed in real numbers $b$ and $c$.
@@ -75,12 +77,16 @@
 	\[\]
 	
 	\subsubsection{Range of $v^2+w^2$}
-	Let $1 - \sigma = t$ to observe the properties of real numbers $v$ and $w$.
+	Let $1 - \sigma = t$ to observe the properties of real numbers $v$ and $w$ when they are individually squared and summed.
 	\[ 1 - \sigma = t \]
 	\[ D_{s} = 1-2^{1-s} \]
+	Then, 
 	\[ 2^{1-s} = 2^{1-\sigma - ci} = 2^{t-ci} = 2^t \cdot 2^{-ci} \]
-	\[ 2^{-ci} = e^{\ln2 \cdot (-c)i} = e^{(-c \ln 2) i} = \cos(-c \ln 2) + \sin(-c \ln 2)i \]
+	The $2^{-ci}$ part can be expressed in cosine and sine.
+	\[ 2^{-ci} = e^{(\ln2) \cdot (-c)i} = e^{(-c \ln 2) i} = \cos(-c \ln 2) + \sin(-c \ln 2)i \]
+	Replace $\cos(-c \ln 2) + \sin(-c \ln 2)i$ with $2^{-ci}$.
 	\[ 2^t \cdot 2^{-ci} = 2^t(\cos(-c \ln 2) + \sin(-c \ln 2)i) \]
+	Finally, derive $v$ and $w$ for $D_s$.
 	\[ D_{s} = 1-2^t \cdot 2^{-ci} = 1 - 2^t\cos(-c \ln 2) - 2^t\sin(-c \ln 2)i \]
 	\[ = 1 - 2^t\cos(c \ln 2) + 2^t\sin(c \ln 2)i \]
 	\[ = v + wi \]
@@ -94,7 +100,7 @@
 	Suppose $v=0$ so that we may know what $w$ cannot equal.
 	\[ v = 1 - 2^{1-\sigma}\cos(c \ln 2) = 0 \]
 	\[ 1 = 2^{1-\sigma}\cos(c \ln 2) \]
-	\[ \frac{1}{2} < \cos(c \ln 2) < 1 \quad (\because 1 < 2^{1-\sigma} < 2) \]
+	\[ \Rightarrow \frac{1}{2} < \cos(c \ln 2) < 1 \quad (\because 1 < 2^{1-\sigma} < 2) \]
 	
 	Since $\cos^2\theta + \sin^2\theta = 1$ or $ \sin\theta = \pm \sqrt{1-\cos^2{\theta}} $,
 	\[ \frac{1}{4} < \cos^2(c \ln 2) < 1 \quad \Rightarrow \quad 0 < 1 - \cos^2(c \ln 2) < \frac{3}{4} \]
@@ -107,7 +113,7 @@
 	\[ \sin(c \ln 2) = 0 \qquad (\because 2^{1-\sigma} \neq 0) \]
 	\[ c \ln 2 = l\cdot\pi \qquad (l \in \mathbb{Z}) \]
 	\[ \Rightarrow \cos(l\pi) = \pm 1 \]
-	\[ \Rightarrow v = 1 - 2^{1-\sigma} \cdot (1) = 1 \quad \text{or} \quad v = 1 - 2^{1-\sigma} \cdot (-1) \]	
+	\[ \Rightarrow v = 1 - 2^{1-\sigma} \cdot (1) \quad \text{or} \quad v = 1 - 2^{1-\sigma} \cdot (-1) \]	
 	\[ \Rightarrow -1 < v < 0 \quad \text{or} \quad 2 < v < 3  \]	
 	\[ \therefore v \neq 0 \]
 	\[\]
@@ -160,7 +166,8 @@
 	Since $\eta(s) = D_s\zeta(s)$, let $D_s = 1-2^{1-s}=v+wi$ and multiply it by $\zeta(s)$ in order to obtain $\eta(s)$ in terms of $X$ and $Y$. Then let $Z = \eta(s)$, the newly transformed complex value.
 	\[ D_s\zeta(s) = \eta(s) = (v+wi) \times (X+Yi) = vX + vYi + wXi - wY  \]
 	\[ = (vX - wY) + (wX + vY)i = Z \]
-	\[ Z = (vX - wY) + (wX + vY)i \]
+
+	\[ \Rightarrow Z = (vX - wY) + (wX + vY)i \]
 	\[ \text{or} \]
 	\[ Z \Bigl( vX - wY, wX + vY \Bigr) \]
 	
@@ -178,7 +185,7 @@
 	\[ = \sqrt{(vX-wY)^2 {+} (wX{+}vY)^2} = 0 \]
 	
 	
-	When analytic continuation is applied and $Z = (vX - wY) + (wX + vY)i$ is established, it is supposed that both $vX - wY$ and $wX + vY$ are real numbers. Therefore, it is safe to assume that $(vX-wY)^2 \geq 0$ and $(wX+vY)^2 \geq 0$, making it possible to square both sides of the latest equation from computing $Z\Omega$.
+	When analytic continuation is applied and $Z = (vX - wY) + (wX + vY)i$ is established, it is supposed that both $vX - wY$ and $wX + vY$ are real numbers. Therefore, it is safe to assume that $(vX-wY)^2 \geq 0$ and $(wX+vY)^2 \geq 0$ and that it is possible to square both sides of the latest equation from computing $Z\Omega$.
 	
 	
 	\[ Z\Omega =  \sqrt{(vX-wY)^2 + (wX+vY)^2} = 0 \]
@@ -188,7 +195,7 @@
 	\[ (vX-wY)^2 + (wX+vY)^2 = (v^2X^2 + w^2Y^2 - 2vwXY) + (w^2X^2 + v^2Y^2 + 2vwXY) \]
 	\[ = (v^2 + w^2)X^2 + (v^2 + w^2)Y^2 \]
 	\[ = (v^2 + w^2)(X^2+Y^2) = 0 \]
-	Since $v^2 + w^2 >0$, both sides of the latest equation may be divided by $(v^2 + w^2)$.
+	Since $v^2 + w^2 >0$, both sides of the latest equation may be divided by $v^2 + w^2$.
 	\[ (v^2 + w^2)(X^2+Y^2) = 0 \qquad \Rightarrow \qquad X^2+Y^2 = 0 \]
 	\[ \because v, w \in \mathbb{R}, \quad v^2 + w^2 > 0 \]
 	\[  \]
@@ -197,7 +204,7 @@
 	
 	\section{Divergence of $\zeta(\frac{2}{b})$}
 	\subsection{Terms revisited}
-	Now that we have established that $X^2+Y^2 = 0$ through analytic continuation, let's observe what happens. The subscripts $\zeta(s)$ will be used to denote that such terms are associated to the result of the Riemann zeta function given $s$ where $s=\frac{1}{b}+ci$.
+	Now that we have established that $X^2+Y^2 = 0$ through analytic continuation, let's observe what happens. The subscripts $\zeta(s)$ will be used to denote that such terms are associated to the result of the Riemann zeta function given non-trivial zero $s$ where $s=\frac{1}{b}+ci$.
 	\[ \zeta(s) = \zeta(\frac{1}{b}+ci) := X_{\zeta(s)} + Y_{\zeta(s)}i \]
 	\[ X_{\zeta(s)} = \sum\limits_{k=1}^{\infty}x_k = \sum\limits_{k=1}^{\infty}\frac{\cos({c\ln \frac{1}{k}})}{\sqrt[b]{k}}, \qquad Y_{\zeta(s)} = \sum\limits_{k=1}^{\infty}y_k = \sum\limits_{k=1}^{\infty}\frac{\sin({c\ln \frac{1}{k}})}{\sqrt[b]{k}} \]
 	
@@ -241,7 +248,7 @@
 	\]
 	\[
 	\begin{aligned}
-		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots {+} \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots {+} \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
 	\end{aligned}
 	\]
 	\[\]
@@ -278,7 +285,7 @@
 	\]
 	\[
 	\begin{aligned}
-		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots {+} \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots {+} \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
 	\end{aligned}
 	\]
 	\[\]
@@ -313,7 +320,7 @@
 	
 	\[ = \sum\limits_{k=1}^{\infty}x_k^2 + \sum\limits_{k=1}^{\infty}y_k^2 + 2\alpha_{\zeta(s)} +  2\beta_{\zeta(s)} = 0 \]
 	\[\]
-	For any k, $x_k^2 + y_k^2$ can be simplified.
+	For any k, $x_k^2 + y_k^2$ can be simplified by the Pythagorean identity where $\cos^2\theta + \sin^2\theta=1$.
 	\[ x_k^2 + y_k^2 = \frac{\cos^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} + \frac{\sin^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} \]
 	\[ = \frac{\cos^2(c \ln \frac{1}{k}) + \sin^2(c \ln \frac{1}{k})}{k^{\frac{2}{b}}} = \frac{1}{k^{\frac{2}{b}}} \]
 	
@@ -366,8 +373,8 @@
 	\end{aligned}
 	\]
 	
-	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) +  \]
-	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \]
+	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) +  \]
+	\[ \qquad\qquad \dots \qquad + \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \]
 	
 	\[\]
 	By initial grouping, we can have similar cosine and sine terms together.
@@ -395,7 +402,7 @@
 		& \qquad \dots  + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{3}) \sin(c \ln \frac{1}{k}) \Bigr) + 
 	\end{aligned}
 	\]
-	\[ \qquad\qquad \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Bigr) \]
+	\[ \qquad\qquad \dots + \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) + \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Bigr) \]
 	
 	\[\]
 	Then we may utilise the fact that $ \cos{A} \cdot \cos{B} = \cos{(A-B)} - \sin{A}\sin{B} $ to cancel out all the sine terms.
@@ -445,7 +452,7 @@
 		& \qquad \Bigl( \frac{1}{3} \cdot \frac{1}{6} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{6}) \Bigr) + \dots  + \Bigl( \frac{1}{3} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3} - c \ln \frac{1}{k}) \Bigr) + 
 	\end{aligned}
 	\]
-	\[ \dots + \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) \Bigr) \]
+	\[ \dots + \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) \Bigr) \]
 	\[\]
 	
 	Common terms of each group can be factored out.
@@ -470,7 +477,7 @@
 	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1} - c \ln \frac{1}{k}) \Biggr\} \]
 	
 	
-	Finally, the logarithm trick where $ \ln{A} - \ln{B} = \ln{\frac{A}{B}} $ will merge all the $c \cdot \ln \frac{1}{k}$ wherever possible.
+	The second law of logarithms where $ \ln{A} - \ln{B} = \ln{\frac{A}{B}} $ will merge all the $c \cdot \ln \frac{1}{k}$ wherever possible.
 	
 	\[
 	\begin{aligned}
@@ -492,6 +499,7 @@
 	\]
 	\[ \dots + \Bigl( \frac{1}{k-1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{k}{k-1}) \Biggr\} \]
 	
+	Finally, the third law of logarithms where $\ln\frac{A}{B} = \ln(\frac{B}{A})^{-1} = -\ln\frac{B}{A}$ and the fact that $\cos(-\theta) = \cos\theta$ will allow the swap between numerators and denominators.
 	\[
 	\begin{aligned}
 		= \quad \Bigl( \frac{1}{1} \Bigr)^\frac1b \Biggl\{ \Bigl( \frac{1}{2} \Bigr)^\frac1b & \Bigl( \cos(c \ln \frac{1}{2}) \Bigr) + \Bigl( \frac{1}{3} \Bigr)^\frac1b \Bigl( \cos(c \ln \frac{1}{3}) \Bigr) + \\
@@ -517,7 +525,7 @@
 	
 	\[\]
 	
-	The reorganised $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ can be viewed as a collection of nodes and branches where each node is the outer coefficient in the form of $\frac{1}{m}^{\frac{1}{b}}$ where $m \in \mathbb{N}$ and each branch is a series of cosine terms with their own inner coefficients. Neither the nodes nor the branches converge. The nodes form a series that would be defined as $\zeta(\frac{1}{b})$ and given that $0 < \frac{1}{b} < 1$, this series diverges. The branches, where each one is a sequence of cosine values multiplied by summands from a subseries of $\zeta(\frac{1}{b})$ diverge. The cosine values as numerators oscillate between -1 and 1, at an increasingly slower rate as $k$ per branch tends to infinity, including both bounds. The terms from $\zeta(\frac{1}{b})$ within every branch act as denominators when multiplied and do not diminish at a sufficient rate to cause each branch to converge. As a result, each node-branch product will diverge, rendering the entire series, a nested loop of Dirichlet series, into divergence. If $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ diverges, $l {\cdot} (\alpha_{\zeta(s)} + \beta_{\zeta(s)})$ diverges where $l \in \mathbb{R}_{\neq 0}$. This means that $\zeta(\frac{2}{b})$ diverges as $\zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)})$. 
+	The reorganised $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ can be viewed as a collection of nodes and branches where each node is the outer coefficient in the form of $\frac{1}{m}^{\frac{1}{b}}$ where $m \in \mathbb{N}_{\geq 1}$ and each branch is a series of cosine terms with their own inner coefficients. Neither the nodes nor the branches converge. The nodes form a series that would be defined as $\zeta(\frac{1}{b})$ and given that $0 < \frac{1}{b} < 1$, this series diverges. The branches, where each one is a sequence of cosine values multiplied by summands from a subseries of $\zeta(\frac{1}{b})$ diverge. The cosine values as numerators oscillate between -1 and 1, at an increasingly slower rate as $k$ per branch tends to infinity while including both bounds. The terms from $\zeta(\frac{1}{b})$ within every branch act as denominators when multiplied and do not diminish at a sufficient rate to cause each branch to converge. As a result, each node-branch product will diverge, rendering the entire series, a nested loop of Dirichlet series, divergent. If $\alpha_{\zeta(s)} + \beta_{\zeta(s)}$ diverges, $l {\cdot} (\alpha_{\zeta(s)} + \beta_{\zeta(s)})$ diverges where $l \in \mathbb{R}_{\neq 0}$. This means that $\zeta(\frac{2}{b})$ diverges as $\zeta(\frac{2}{b}) = -2(\alpha_{\zeta(s)} + \beta_{\zeta(s)})$. 
 	
 	\[ \zeta\Bigl( \frac{2}{b} \Bigr) \quad \text{DNE} \qquad (0 < \frac{1}{b} < 1) \]
 	
@@ -554,7 +562,7 @@
 	\[ H = Im(\eta(s)) = \sum\limits_{k=1}^{\infty}h_{k}, \quad h_k = (-1)^{k-1} \cdot y_k \]
 	
 	Now $\zeta(s)$ may be expressed in terms of $G$ and $H$ to obtain the new $Z$.
-	\[ \zeta(s) = \frac{\eta(s)}{D_{s}} = \frac{G + Hi}{1-2^{1-s}} = \frac{(G+Hi)(v-wi)}{(v+wi)(v-wi)} \]
+	\[ \zeta(s) = \frac{\eta(s)}{1-2^{1-s}} = \frac{G + Hi}{D_{s}} = \frac{G+Hi}{v+wi} = \frac{(G+Hi)(v-wi)}{(v+wi)(v-wi)} \]
 	
 	\[ = \frac{vG-wGi+vHi-wHi^2}{v^2+w^2} = \frac{(vG+wH)+(-wG+vH)i}{v^2+w^2} \]
 	
@@ -574,7 +582,7 @@
 	\[ = \sqrt{  (\frac{vG{+}wH}{v^2{+}w^2})^2 {+} p^2 {-} 2p(\frac{vG{+}wH}{v^2{+}w^2}) {+} (\frac{-wG{+}vH}{v^2{+}w^2})^2 {+} q^2 {-}2q(\frac{-wG{+}vH}{v^2{+}w^2}) } = 0 \]
 	\[\]
 	\[\]
-	$ \text{If} \quad \Omega(p, q) = (0, 0), $
+	If $\Omega(p, q) = (0, 0)$ by letting $p=0$ and $q=0$,
 	\[ Z\Omega = \sqrt{  (\frac{vG{+}wH}{v^2{+}w^2})^2 {+} 0^2 {-} 2 {\cdot} 0 (\frac{vG{+}wH}{v^2{+}w^2}) {+} (\frac{-wG{+}vH}{v^2{+}w^2})^2 {+} 0^2 {-} 2 {\cdot} 0 (\frac{-wG{+}vH}{v^2{+}w^2}) } \]
 	
 	\[ = \sqrt{\Bigl(\frac{vG{+}wH}{v^2{+}w^2}\Bigr)^2 + \Bigl( \frac{-wG{+}vH}{v^2{+}w^2} \Bigr)^2} = 0 \]
@@ -594,7 +602,7 @@
 	
 	
 	\subsection{Cross terms of $\eta(s)$}
-	Now that even for $G$ and $H$, $G^2 + H^2 = 0$ is established, let subscripts $\eta(s)$ denote that such terms are associated to the result of the Dirichlet eta function given $s$ where $s=\frac{1}{b}+ci$.
+	Now that even for $G$ and $H$, $G^2 + H^2 = 0$ is established, let subscripts $\eta(s)$ denote that such terms are associated to the result of the Dirichlet eta function given non-trivial zero $s$ where $s=\frac{1}{b}+ci$.
 	
 	\[ \eta(s) = \eta\Bigl( \frac{1}{b}+ci \Bigr) := G_{\eta(s)}+H_{\eta(s)}i \]
 	
@@ -642,7 +650,7 @@
 	\]
 	\[
 	\begin{aligned}
-		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots - \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots - \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \cos(c \ln \frac{1}{k-1}) \cos(c \ln \frac{1}{k}) \Biggr\}
 	\end{aligned}
 	\]
 	
@@ -690,7 +698,7 @@
 	\]
 	\[
 	\begin{aligned}
-		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots - \Bigl( \frac{1}{(k-1)k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
+		\vdots \qquad\qquad \vdots \qquad\qquad \vdots \qquad {+} \dots - \Bigl( \frac{1}{k-1} \cdot \frac{1}{k} \Bigr)^\frac1b \sin(c \ln \frac{1}{k-1}) \sin(c \ln \frac{1}{k}) \Biggr\}
 	\end{aligned}
 	\]
 	\[\]
@@ -930,16 +938,16 @@
 	
 	\[ \therefore b=2 \ ,  \quad \sigma = \frac{1}{b} = \frac{1}{2} = Re(s) \]
 	\\
-	$\Rightarrow$ The real part of s where the Riemann zeta function converges to a non-trivial zero is always $\frac{1}{2}$. $\qed$
+	$\Rightarrow$ The real part of a non-trivial zero $s$ of the Riemann zeta function is always $\frac{1}{2}$. $\qed$
 	\[\]
-	Interestingly, this means that given a non-trivial zero s, $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ gradually becomes equivalent to the harmonic series as $\zeta(\frac2b)$ is $\zeta(1)$.
-	
+	Interestingly, this means that given a non-trivial zero $s$, $-2(\alpha_{\eta(s)} + \beta_{\eta(s)})$ gradually becomes equivalent to the harmonic series as $\zeta(\frac2b)$ is $\zeta(1)$.
+	\\
 	
 	
 	%\bibliographystyle{plain}
 	%\bibliographystyle{amsplain}
-	\bibliographystyle{amsalpha}
-	%\bibliographystyle{amsrefs}
+	%\bibliographystyle{amsalpha}
+	\bibliographystyle{amsrefs}
 	\bibliography{spirit_main_refs}
 	
 \end{document}

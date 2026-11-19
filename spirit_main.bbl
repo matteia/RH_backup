@@ -1,13 +1,29 @@
-\begin{thebibliography}{1}
+% \bib, bibdiv, biblist are defined by the amsrefs package.
+\begin{bibdiv}
+\begin{biblist}
 
-\bibitem{yuan_he_unif}
-Yuan He.
-\newblock A unification of euler-maclaurin and euler-boole summation formulas,
-  2026.
+\bib{uberdie_riemann}{article}{
+      author={RIEMANN, B.},
+       title={Uber die anzahl der primzahlen unter einer gegebenen grosse},
+        date={1859},
+     journal={Monatsber. d. Konigl. Preuss. Akad.},
+         url={https://cir.nii.ac.jp/crid/1571698600446089216},
+}
 
-\bibitem{uberdie_riemann}
-B.~RIEMANN.
-\newblock Uber die anzahl der primzahlen unter einer gegebenen grosse.
-\newblock {\em Monatsber. d. Konigl. Preuss. Akad.}, 1859.
+\bib{Bombieri2000ProblemsOT}{inproceedings}{
+      author={Bombieri, Enrico},
+       title={Problems of the millennium : the riemann hypothesis},
+        date={2000},
+         url={https://api.semanticscholar.org/CorpusID:8382421},
+}
 
-\end{thebibliography}
+\bib{yuan_he_unif}{misc}{
+      author={He, Yuan},
+       title={A unification of euler-maclaurin and euler-boole summation
+  formulas},
+        date={2026},
+         url={https://arxiv.org/abs/2609.00687},
+}
+
+\end{biblist}
+\end{bibdiv}
